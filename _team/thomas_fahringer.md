@@ -1,5 +1,5 @@
 ---
-title: "Univ.-Prof. Dr. Thomas Fahringer"
+title: "Thomas Fahringer"
 date: 2018-11-19T10:47:58+10:00
 image: "images/team/tf.jpg"
 jobtitle: "Full Professor"
@@ -8,7 +8,7 @@ weight: 3
 admin: false
 ---
 
-Univ.-Prof. Dr. Thomas Fahringer received his Ph.D. degree from the Vienna University of Technology in 1993. Since 2003, he has been a full professor of Computer Science at the Institute of Computer Science, University of Innsbruck, Austria. His main research interests include software architectures, programming paradigms, compiler technology, performance analysis, and prediction for parallel and distributed systems.
+Thomas Fahringer received his Ph.D. degree from the Vienna University of Technology in 1993. Since 2003, he has been a full professor of Computer Science at the Institute of Computer Science, University of Innsbruck, Austria. His main research interests include software architectures, programming paradigms, compiler technology, performance analysis, and prediction for parallel and distributed systems.
 
 | ----------------  | --------- | 
 | Room              | 3M06      | 

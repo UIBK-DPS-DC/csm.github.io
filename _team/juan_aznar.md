@@ -1,5 +1,5 @@
 ---
-title: "Dr. Juan Aznar-Poveda"
+title: "Juan Aznar-Poveda"
 date: 2018-11-19T10:47:58+10:00
 jobtitle: "Postdoctoral Univ. Assistant"
 linkedinurl: "https://www.linkedin.com/"
