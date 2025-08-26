@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Github",
+    "link": "https://github.com/UIBK-DPS-DC",
+    "image": "images/social/github.svg"
+  },
+  {
+      "name": "Discord",
+      "link": "https://discord.gg/GDnrBsEtar",
+      "image": "images/social/discord.svg"
+  }
+]

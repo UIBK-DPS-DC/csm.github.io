@@ -1,0 +1,36 @@
+main:
+  - name: "Home"
+    url: "/"
+    weight: 1
+  - name: "About"
+    url: "/about/"
+    weight: 2
+  - name: "Publications"
+    url: "/research/"
+    weight: 4
+  - name: "Documentation"
+    weight: 3
+    url: "/docs/"
+    submenu:
+    - name: "CSM Specifications"
+      url: "/docs/"
+    - name: "Cirrina runtime"
+      url: "https://github.com/UIBK-DPS-DC/Cirrina"
+    - name: "Cirrina setup"
+      url: "/setup/"
+    - name: "Use cases"
+      url: "https://github.com/UIBK-DPS-DC/Cirrina-UseCases"
+  - name: "Our team"
+    url: "/team/"
+    weight: 5
+  - name: "Contact"
+    url: "/contact/"
+    weight: 6
+
+footer:
+  - name: "Home"
+    url: "/"
+    weight: 1
+  - name: "Contact"
+    url: "/contact/"
+    weight: 2

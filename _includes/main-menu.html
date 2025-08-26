@@ -1,0 +1,33 @@
+<div id="main-menu" class="main-menu">
+  {% assign mainmenu = site.data.menus.main | sort: 'weight' %}
+  <ul>
+    {% for item in mainmenu %}
+    <li class="{% if item.url == page.url %}active{% endif %}">
+      <a href="{{ item.url | relative_url }}" 
+         {% if item.url contains 'http' %}target="_blank" rel="noopener"{% endif %}>
+        {{ item.name }}
+        {% if item.url contains 'http' %}
+        <span class="link-icon">&#128279;</span> <!-- Unicode chain link -->
+        {% endif %}
+      </a>
+
+      {% if item.submenu %}
+      <ul class="submenu">
+        {% for subitem in item.submenu %}
+        <li class="{% if subitem.url == page.url %}active{% endif %}">
+          <a href="{{ subitem.url | relative_url }}"
+             {% if subitem.url contains 'http' %}target="_blank" rel="noopener"{% endif %}>
+            {{ subitem.name }}
+            {% if subitem.url contains 'http' %}
+            <span class="link-icon">&#128279;</span>
+            {% endif %}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+
+    </li>
+    {% endfor %}
+  </ul>
+</div>

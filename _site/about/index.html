@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <a href="#" id="scrollToTop" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </a>  
+  <script src="/assets/js/scroll-to-top.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <meta charset="utf-8">
+  <title>Collaborative State Machines (CSM)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Self host font -->
+  <!-- <link rel="preload" href="/assets/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  <meta name="description" content="about" />
+  <meta property="og:title" content="Collaborative State Machines (CSM)"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content=""/>
+  
+  <meta property="og:description" content="about"/>
+  <meta name="twitter:card" content="summary"/>
+  
+  
+
+</head>
+
+<body class='page page-team'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="active">
+      <a href="/about/">About</a>
+    </li>
+    
+    <li class="">
+      <a href="/docs/">Documentation</a>
+    </li>
+    
+    <li class="">
+      <a href="/research/">Publications</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Our team</a>
+    </li>
+    
+    <li class="">
+      <a href="/contact/">Contact</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="https://dps.uibk.ac.at/" target="_blank" class="logo-link">
+        <img width="130px" height="40px" alt="DPS" src="/images/logo/dpslogo.png" />
+      </a>
+    </div>
+    
+    <style>
+      .logo {
+        display: flex;            /* Align the logos side by side */
+        gap: 10px;                /* Add space between the logos */
+        align-items: left;      /* Vertically align logos in the center */
+      }
+    
+      .logo-link img {
+        display: block;           /* Remove any space below images */
+      }
+    </style>
+    
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/" 
+         >
+        Home
+        
+      </a>
+
+      
+
+    </li>
+    
+    <li class="active">
+      <a href="/about/" 
+         >
+        About
+        
+      </a>
+
+      
+
+    </li>
+    
+    <li class="">
+      <a href="/docs/" 
+         >
+        Documentation
+        
+      </a>
+
+      
+      <ul class="submenu">
+        
+        <li class="">
+          <a href="/docs/"
+             >
+            CSM Specifications
+            
+          </a>
+        </li>
+        
+        <li class="">
+          <a href="https://github.com/UIBK-DPS-DC/Cirrina"
+             target="_blank" rel="noopener">
+            Cirrina runtime
+            
+            <span class="link-icon">&#128279;</span>
+            
+          </a>
+        </li>
+        
+        <li class="">
+          <a href="/setup/"
+             >
+            Cirrina setup
+            
+          </a>
+        </li>
+        
+        <li class="">
+          <a href="https://github.com/UIBK-DPS-DC/Cirrina-UseCases"
+             target="_blank" rel="noopener">
+            Use cases
+            
+            <span class="link-icon">&#128279;</span>
+            
+          </a>
+        </li>
+        
+      </ul>
+      
+
+    </li>
+    
+    <li class="">
+      <a href="/research/" 
+         >
+        Publications
+        
+      </a>
+
+      
+
+    </li>
+    
+    <li class="">
+      <a href="/team/" 
+         >
+        Our team
+        
+      </a>
+
+      
+
+    </li>
+    
+    <li class="">
+      <a href="/contact/" 
+         >
+        Contact
+        
+      </a>
+
+      
+
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+    <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-12">
+      <div class="team team-single">
+        <h1 class="subtitle">Collaborative State Machines (CSM)</h1>
+        <div class="content"><h2 id="overview">Overview</h2>
+<p>This project introduces <strong>Collaborative State Machines (CSM)</strong>, a disruptive programming model designed for developing <strong>reactive, event-driven, and stateful applications</strong> across the <strong>Cloud–Edge–IoT continuum</strong>.</p>
+
+<p>Unlike conventional models (e.g., DAG-based workflows, SOA, or serverless systems), CSM explicitly leverages <strong>formal state machines</strong> as first-class programming abstractions. Applications consist of multiple <strong>state machines that collaborate</strong> as a homogeneous distributed system, enabling:</p>
+<ul>
+  <li>Fine-grained <strong>event handling</strong></li>
+  <li><strong>State encapsulation</strong> (inherent and shared)</li>
+  <li>Integration of <strong>actions and services</strong></li>
+  <li><strong>Advanced data models</strong> with local, static, and persistent lifetimes</li>
+  <li><strong>Efficient distributed scheduling</strong> across heterogeneous environments</li>
+</ul>
+
+<hr />
+
+<h2 id="key-features">Key Features</h2>
+
+<h3 id="-collaborative-state-machines">​ Collaborative State Machines</h3>
+<ul>
+  <li>Multiple state machines form distributed applications behaving as a single logical system.</li>
+  <li>Collaboration via <strong>event propagation</strong> and <strong>shared persistent data</strong>.</li>
+</ul>
+
+<h3 id="-reactive-and-event-driven-behavior">​ Reactive and Event-Driven Behavior</h3>
+<ul>
+  <li>Event handling at multiple levels: applications, machines, states, and transitions.</li>
+  <li>Supports autonomous adaptation to dynamic environmental conditions.</li>
+</ul>
+
+<h3 id="-stateful-computing">​ Stateful Computing</h3>
+<ul>
+  <li><strong>State as a core concept</strong>:
+    <ul>
+      <li><strong>Inherent state</strong>: local to each machine.</li>
+      <li><strong>Shared state</strong>: persistent, low-latency data accessible across machines.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="-advanced-data-model">​ Advanced Data Model</h3>
+<ul>
+  <li>Supports multiple data scopes and lifetimes:
+    <ul>
+      <li><strong>Local</strong>: valid during a state’s execution.</li>
+      <li><strong>Static</strong>: preserved throughout a state lifecycle.</li>
+      <li><strong>Persistent</strong>: globally available across machines.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="-intelligent-scheduling">​ Intelligent Scheduling</h3>
+<ul>
+  <li><strong>Dynamic multi-objective scheduling</strong> optimizes:
+    <ul>
+      <li>Response times</li>
+      <li>Resource utilization</li>
+      <li>Costs and energy consumption</li>
+    </ul>
+  </li>
+  <li>Leverages contextual knowledge embedded in state machines to enhance placement decisions across the continuum.</li>
+</ul>
+
+<h3 id="-virtual-architectures-vas">​​ Virtual Architectures (VAs)</h3>
+<ul>
+  <li>High-level abstraction for <strong>infrastructure orchestration</strong>.</li>
+  <li>Decouples application logic from specific underlying resources or platforms.</li>
+  <li>Enables <strong>adaptive, event-driven orchestration</strong>, addressing the limitations of traditional IaC tools.</li>
+</ul>
+
+<hr />
+
+<h2 id="csm-platform">CSM Platform</h2>
+
+<p>The CSM ecosystem includes:</p>
+
+<ul>
+  <li><strong>CSM API</strong>: A high-level programming interface for building collaborative state machine applications.</li>
+  <li><strong>CSML (Collaborative State Machine Language)</strong>: A formal, expressive language for defining machine behavior, states, actions, and transitions.</li>
+  <li><strong>Runtime System</strong>: A distributed execution engine that orchestrates state machines and computational services.</li>
+  <li><strong>Scheduler</strong>: A multi-objective optimizer balancing cost, latency, and efficiency.</li>
+  <li><strong>Resource Manager</strong>: Orchestrates deployment across heterogeneous infrastructure using Virtual Architectures.</li>
+</ul>
+
+<p><strong>System Architecture:</strong></p>
+<ol>
+  <li>Applications described using <strong>CSML</strong></li>
+  <li>Mapped and optimized by <strong>scheduler + resource manager</strong></li>
+  <li>Deployed on the <strong>runtime system</strong> across IoT, edge, and cloud environments</li>
+</ol>
+
+<hr />
+
+<h2 id="scientific-and-industrial-impact">Scientific and Industrial Impact</h2>
+
+<ul>
+  <li><strong>Advances programming models</strong> by moving beyond DAG-based workflows and serverless paradigms.</li>
+  <li><strong>Boosts developer productivity</strong> with reusable abstractions and a high-level API.</li>
+  <li><strong>Enhances system performance</strong> through intelligent, context-aware scheduling.</li>
+  <li><strong>Improves sustainability</strong> via efficient resource allocation across multi-cluster infrastructures.</li>
+</ul>
+
+<hr />
+
+<h2 id="use-cases">Use Cases</h2>
+
+<h3 id="-nextgensmartbuilding-ngsb-industrial-use-case">​ NextGenSmartBuilding (NGSB, Industrial Use Case)</h3>
+<p>An event-driven smart building system with services for:</p>
+<ul>
+  <li><strong>Energy efficiency</strong> (e.g., HVAC optimization by occupancy)</li>
+  <li><strong>Fire safety</strong> (e.g., real-time evacuation, fire door control)</li>
+  <li><strong>Automation</strong> (e.g., lighting and elevator control)</li>
+</ul>
+
+<p><strong>Current limitations:</strong></p>
+<ul>
+  <li>Fragmented components deployed across heterogeneous systems</li>
+  <li>Lack of holistic state limits optimization</li>
+</ul>
+
+<p><strong>CSM improvements:</strong></p>
+<ul>
+  <li>Unified service collaboration via shared state and multi-layer events</li>
+  <li>Adaptive real-time optimization → <strong>25 % faster response times</strong>, <strong>20 % lower operational cost</strong></li>
+</ul>
+
+<div class="text-center my-3">
+  <img src="/images/illustrations/usecase.png" alt="Figure 1: An example of a CSM-based smart building." class="img-fluid" style="max-width: 60%;" />
+  <p class="text-muted fst-italic mt-2">
+    Figure 1: An example of a CSM-based smart building..
+  </p>
+</div>
+
+<h3 id="-scientific-applications">​ Scientific Applications</h3>
+<p>CSM is evaluated on two infrastructures—<strong>Grid’5000</strong> and the <strong>Austrian Federated Computing Continuum (AFCC)</strong>—through four scientific applications:</p>
+<ol>
+  <li><strong>Stress Testing</strong> – Scales states, events, and persistent data access</li>
+  <li><strong>Railway Crossing</strong> – Safety-critical control system</li>
+  <li><strong>Intelligent Surveillance</strong> – Event-driven monitoring</li>
+  <li><strong>Smart Factory</strong> – Automated industrial control</li>
+</ol>
+
+<p>Expected results:</p>
+<ul>
+  <li><strong>Scalability</strong> ↑ 20 %</li>
+  <li><strong>Response times</strong> ↓ 25 %</li>
+  <li><strong>Costs</strong> ↓ 30 %</li>
+</ul>
+
+<hr />
+
+<h2 id="research-foundations">Research Foundations</h2>
+
+<h3 id="academic-background">Academic Background</h3>
+<ul>
+  <li>Builds on <strong>Cirrina Runtime</strong> (UIBK), a DAG-based execution prototype.</li>
+  <li>Builds upon research frameworks such as <strong>Askalon</strong>, <strong>Apollo</strong>, and projects like <strong>CELERITY</strong>, <strong>INPACT</strong>, <strong>ENTICE</strong>, and <strong>LIGATE</strong>.</li>
+</ul>
+
+<h3 id="industrial-background">Industrial Background</h3>
+<ul>
+  <li>Collaboration with <strong>SIPLAN</strong>, contributing real-world infrastructure and industrial use cases (e.g., Tiroler Cloud, Smart City Hub Innsbruck, NGSB).</li>
+</ul>
+
+<hr />
+
+<h2 id="formal-foundations">Formal Foundations</h2>
+
+<ul>
+  <li>Based on <strong>Statecharts</strong> (Harel) for modeling reactive systems.</li>
+  <li>Incorporates <strong>Finite-State Transducers (FSTs)</strong> with Mealy and Moore semantics.</li>
+  <li>Formalized using <strong>Abstract State Machines (ASMs)</strong> to ensure correctness, consistency, and termination.</li>
+  <li>Bridges rigorous theory and practical distributed execution.</li>
+</ul>
+
+<hr />
+
+<h2 id="expected-outcomes">Expected Outcomes</h2>
+
+<ol>
+  <li><strong>Open-source CSM API and Platform</strong> for developers.</li>
+  <li><strong>CSML</strong> for formal distributed application descriptions.</li>
+  <li><strong>Dynamic scheduler and VA-based orchestration</strong> for optimized deployments.</li>
+  <li><strong>Demonstrated improvements</strong> in productivity, performance, and efficiency.</li>
+  <li><strong>Scientific contributions</strong> in programming models and distributed systems orchestration.</li>
+</ol>
+
+<hr />
+
+<h2 id="evaluation-platforms">Evaluation Platforms</h2>
+
+<ul>
+  <li><strong>Grid’5000</strong>: Europe’s largest academic edge-cloud testbed—666 compute nodes, 21,000 cores.</li>
+  <li><strong>AFCC</strong>: Four-site Austrian edge-cloud infrastructure—1,588 cores, 5 TB memory, 40 TB storage.</li>
+</ul>
+
+<hr />
+
+<h2 id="license">License</h2>
+<p>The CSM API and Platform will be made available as <strong>open source</strong> under a permissive license (TBD).</p>
+
+<hr />
+
+<h2 id="citation">Citation</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@article<span class="o">{</span>etheredge2025collaborative,
+  <span class="nv">title</span><span class="o">={</span>Collaborative State Machines: A Better Programming Model <span class="k">for </span>the Cloud-Edge-IoT Continuum<span class="o">}</span>,
+  <span class="nv">author</span><span class="o">={</span>Etheredge, Marlon and Fahringer, Thomas and Erlacher, Felix and Kohler, Elias and Pedratscher, Stefan and Aznar-Poveda, Juan and Saurabh, Nishant and Lebre, Adrien<span class="o">}</span>,
+  <span class="nv">journal</span><span class="o">={</span>arXiv preprint arXiv:2507.21685<span class="o">}</span>,
+  <span class="nv">year</span><span class="o">={</span>2025<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<hr />
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h5 style="color: white;">Distributed and Parallel Systems group</h5>
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/contact/">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <a href="https://www.uibk.ac.at/en/" target="_blank" class="logo-link">
+            <img width="95px" height="40px" alt="DPS" src="/images/logo/uibklogo.png" />
+          </a>
+          
+            <div class="social">
+  
+    <a href="https://github.com/UIBK-DPS-DC" target="blank"><img src="/images/social/github.svg" title="Github" alt="Github" /></a>
+  
+    <a href="https://discord.gg/GDnrBsEtar" target="blank"><img src="/images/social/discord.svg" title="Discord" alt="Discord" /></a>
+  
+</div>
+
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>

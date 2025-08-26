@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <a href="#" id="scrollToTop" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </a>  
+  <script src="/assets/js/scroll-to-top.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <meta charset="utf-8">
+  <title>Cirrina setup and usage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Self host font -->
+  <!-- <link rel="preload" href="/assets/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  
+  <meta property="og:title" content="Cirrina setup and usage"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content=""/>
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  
+  
+
+</head>
+
+<body class='page page-services'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+    <li class="">
+      <a href="/docs/">Documentation</a>
+    </li>
+    
+    <li class="">
+      <a href="/research/">Publications</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Our team</a>
+    </li>
+    
+    <li class="">
+      <a href="/contact/">Contact</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="https://dps.uibk.ac.at/" target="_blank" class="logo-link">
+        <img width="130px" height="40px" alt="DPS" src="/images/logo/dpslogo.png" />
+      </a>
+    </div>
+    
+    <style>
+      .logo {
+        display: flex;            /* Align the logos side by side */
+        gap: 10px;                /* Add space between the logos */
+        align-items: left;      /* Vertically align logos in the center */
+      }
+    
+      .logo-link img {
+        display: block;           /* Remove any space below images */
+      }
+    </style>
+    
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/" 
+         >
+        Home
+        
+      </a>
+
+      
+
+    </li>
+    
+    <li class="">
+      <a href="/about/" 
+         >
+        About
+        
+      </a>
+
+      
+
+    </li>
+    
+    <li class="">
+      <a href="/docs/" 
+         >
+        Documentation
+        
+      </a>
+
+      
+      <ul class="submenu">
+        
+        <li class="">
+          <a href="/docs/"
+             >
+            CSM Specifications
+            
+          </a>
+        </li>
+        
+        <li class="">
+          <a href="https://github.com/UIBK-DPS-DC/Cirrina"
+             target="_blank" rel="noopener">
+            Cirrina runtime
+            
+            <span class="link-icon">&#128279;</span>
+            
+          </a>
+        </li>
+        
+        <li class="active">
+          <a href="/setup/"
+             >
+            Cirrina setup
+            
+          </a>
+        </li>
+        
+        <li class="">
+          <a href="https://github.com/UIBK-DPS-DC/Cirrina-UseCases"
+             target="_blank" rel="noopener">
+            Use cases
+            
+            <span class="link-icon">&#128279;</span>
+            
+          </a>
+        </li>
+        
+      </ul>
+      
+
+    </li>
+    
+    <li class="">
+      <a href="/research/" 
+         >
+        Publications
+        
+      </a>
+
+      
+
+    </li>
+    
+    <li class="">
+      <a href="/team/" 
+         >
+        Our team
+        
+      </a>
+
+      
+
+    </li>
+    
+    <li class="">
+      <a href="/contact/" 
+         >
+        Contact
+        
+      </a>
+
+      
+
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
+</script>
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+
+
+
+
+<div class="docs" style="font-family: 'Lato','Open Sans','Roboto','Ubuntu','Playfair Display',sans-serif;">
+  <div class="container" style="padding-top: 100px; padding-bottom: 60px;">
+    <div class="row">
+
+      <!-- Sidebar (left) -->
+      <nav id="toc-sidebar" class="col-12 col-md-4 col-lg-3 bg-light border-end position-relative overflow-auto py-3 px-3">
+        <h5 class="fw-bold mb-3">Content</h5>
+        <ul id="toc" class="list-unstyled small mb-0"></ul>
+      </nav>
+
+      <!-- Main content (right) -->
+      <main class="col-12 col-md-8 col-lg-9 px-md-4">
+        <div class="team team-single">
+          <h1 class="subtitle">Cirrina setup and usage</h1>
+          <div id="markdown-content" class="content">
+            <p>This guide provides a step-by-step overview for setting up, running, and monitoring the Cirrina runtime with associated services, CSM jobs, and observability tools.</p>
+
+<hr />
+
+<h2 id="building-cirrina-runtime">Building Cirrina Runtime</h2>
+
+<ol>
+  <li>
+    <p><strong>Install Protocol Buffers</strong><br />
+Download and install <code class="language-plaintext highlighter-rouge">protoc</code> version <strong>v21.9</strong>.</p>
+  </li>
+  <li><strong>Clone Cirrina Source</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone &lt;cirrina-repo-url&gt;
+<span class="nb">cd </span>cirrina
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Build the Docker Image</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker build <span class="nt">-t</span> &lt;cirrina-image-name&gt; <span class="nb">.</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="core-setup">Core Setup</h2>
+
+<ol>
+  <li><strong>Create a Dedicated Docker Network</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker network create xyz
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Launch ZooKeeper and NATS Containers</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">-d</span> <span class="se">\</span>
+  <span class="nt">--name</span> zookeeper-server <span class="se">\</span>
+  <span class="nt">--network</span> xyz <span class="se">\</span>
+  <span class="nt">-p</span> 2181:2181 <span class="se">\</span>
+  zookeeper:latest
+
+docker run <span class="nt">-d</span> <span class="se">\</span>
+  <span class="nt">--name</span> nats-server <span class="se">\</span>
+  <span class="nt">--network</span> xyz <span class="se">\</span>
+  <span class="nt">-p</span> 4222:4222 <span class="nt">-p</span> 8222:8222 <span class="se">\</span>
+  nats:latest <span class="nt">-js</span>
+</code></pre></div>    </div>
+    <blockquote>
+      <p>Expose port <code class="language-plaintext highlighter-rouge">8222</code> for NATS monitoring.</p>
+    </blockquote>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="flask-application">Flask Application</h2>
+
+<ol>
+  <li><strong>Run Flask App Container</strong><br />
+Mount the dataset path to include images:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">-d</span> <span class="se">\</span>
+  <span class="nt">--name</span> xyz-service <span class="se">\</span>
+  <span class="nt">--network</span> xyz <span class="se">\</span>
+  <span class="nt">-v</span> <span class="s2">"/mnt/d/CSM/wisenet_dataset:/usr/src/app/wisenet_dataset"</span> <span class="se">\</span>
+  &lt;flask-app-image-name&gt;
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Notes</strong>
+    <ul>
+      <li>Replace <code class="language-plaintext highlighter-rouge">&lt;flask-app-image-name&gt;</code> with your Flask application image.</li>
+      <li>The mounted path ensures that your application has access to the necessary dataset.</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="defining-csm-jobs">Defining CSM Jobs</h2>
+
+<ol>
+  <li>
+    <p><strong>Create a CSM Gist</strong><br />
+Example: GitHub Gist containing a serialized CSM (Pickle file).</p>
+  </li>
+  <li><strong>Import Job</strong>
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="sh">"</span><span class="s">https://gist.githubusercontent.com/AlexZangerle/098a806902e4dd348d420483a0becfd4/raw/8881e8c166fb69a18e5fc3b6e0e9f2c5cd613873/buildingControlCSM.pkl</span><span class="sh">"</span> <span class="k">as</span> <span class="n">BuildingControlCSM</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Define Service Implementations</strong><br />
+Example:
+    <div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">serviceImplementations</span> <span class="o">{</span>
+  <span class="k">new</span> <span class="nc">HttpServiceImplementationDescription</span> <span class="o">{</span>
+    <span class="n">name</span> <span class="k">=</span> <span class="s">"detectSunLightService"</span>
+    <span class="n">cost</span> <span class="k">=</span> <span class="mf">1.0</span>
+    <span class="n">local</span> <span class="k">=</span> <span class="kc">false</span>
+    <span class="n">scheme</span> <span class="k">=</span> <span class="s">"http"</span>
+    <span class="n">host</span> <span class="k">=</span> <span class="s">"building-service"</span>
+    <span class="n">port</span> <span class="k">=</span> <span class="mi">8005</span>
+    <span class="n">endPoint</span> <span class="k">=</span> <span class="s">"/detectSunLight"</span>
+    <span class="n">method</span> <span class="k">=</span> <span class="s">"POST"</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="n">collaborativeStateMachine</span> <span class="k">=</span> <span class="nc">BuildingControlCSM</span>
+<span class="n">stateMachineName</span> <span class="k">=</span> <span class="s">"dummy"</span>
+<span class="n">localData</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Mapping</span> <span class="o">{}</span>
+<span class="n">bindEventInstanceIds</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Listing</span> <span class="o">{}</span>
+<span class="n">runtimeName</span> <span class="k">=</span> <span class="s">"runtime"</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Submit Jobs via ZooKeeper</strong><br />
+Example Python script using <code class="language-plaintext highlighter-rouge">KazooClient</code>:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">kazoo.client</span> <span class="kn">import</span> <span class="n">KazooClient</span>
+
+<span class="n">zk</span> <span class="o">=</span> <span class="nc">KazooClient</span><span class="p">(</span><span class="n">hosts</span><span class="o">=</span><span class="n">args</span><span class="p">.</span><span class="n">host</span><span class="p">)</span>
+<span class="n">zk</span><span class="p">.</span><span class="nf">start</span><span class="p">()</span>
+<span class="n">zk</span><span class="p">.</span><span class="nf">ensure_path</span><span class="p">(</span><span class="sh">"</span><span class="s">/jobs</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="n">node_path</span> <span class="o">=</span> <span class="sh">"</span><span class="s">/jobs/job0</span><span class="sh">"</span>
+<span class="k">if</span> <span class="n">zk</span><span class="p">.</span><span class="nf">exists</span><span class="p">(</span><span class="n">node_path</span><span class="p">):</span>
+    <span class="n">zk</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="n">node_path</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="nf">open</span><span class="p">(</span><span class="n">args</span><span class="p">.</span><span class="n">pkl_file</span><span class="p">,</span> <span class="sh">'</span><span class="s">rb</span><span class="sh">'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">pkl_content</span> <span class="o">=</span> <span class="n">f</span><span class="p">.</span><span class="nf">read</span><span class="p">()</span>
+
+<span class="n">zk</span><span class="p">.</span><span class="nf">create</span><span class="p">(</span><span class="n">node_path</span><span class="p">,</span> <span class="n">pkl_content</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Node </span><span class="sh">'</span><span class="si">{</span><span class="n">node_path</span><span class="si">}</span><span class="sh">'</span><span class="s"> created successfully</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div>    </div>
+    <blockquote>
+      <p>For multiple jobs, increment the node path: <code class="language-plaintext highlighter-rouge">/jobs/job1</code>, <code class="language-plaintext highlighter-rouge">/jobs/job2</code>, etc.</p>
+    </blockquote>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="monitoring-setup">Monitoring Setup</h2>
+
+<ol>
+  <li><strong>Create <code class="language-plaintext highlighter-rouge">docker-compose.yaml</code></strong> with the following services:
+    <ul>
+      <li>OpenTelemetry Collector: <code class="language-plaintext highlighter-rouge">otel/opentelemetry-collector-contrib:latest</code></li>
+      <li>Prometheus: <code class="language-plaintext highlighter-rouge">prom/prometheus:latest</code></li>
+      <li>Grafana: <code class="language-plaintext highlighter-rouge">grafana/grafana-oss:latest</code></li>
+    </ul>
+  </li>
+  <li><strong>Expose Ports</strong>
+    <ul>
+      <li>OTEL Collector: <code class="language-plaintext highlighter-rouge">4317</code></li>
+      <li>Prometheus: <code class="language-plaintext highlighter-rouge">9090</code></li>
+      <li>Grafana: <code class="language-plaintext highlighter-rouge">3000</code></li>
+    </ul>
+  </li>
+  <li><strong>Add Containers to the Same Network</strong>
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">networks</span><span class="pi">:</span>
+  <span class="na">xyz</span><span class="pi">:</span>
+    <span class="na">external</span><span class="pi">:</span> <span class="kc">true</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Launch Monitoring Stack</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker-compose up <span class="nt">-d</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Configure Grafana</strong>
+    <ul>
+      <li>Open <code class="language-plaintext highlighter-rouge">http://localhost:3000</code></li>
+      <li>Go to <strong>Data Sources</strong> → Add Prometheus → URL: <code class="language-plaintext highlighter-rouge">http://prometheus:9090</code> → Save &amp; Test</li>
+    </ul>
+  </li>
+  <li><strong>Prometheus Metrics</strong><br />
+Accessible at <code class="language-plaintext highlighter-rouge">http://localhost:9090/metrics</code>.</li>
+</ol>
+
+<hr />
+
+<h2 id="runtime-startup">Runtime Startup</h2>
+
+<ol>
+  <li><strong>Ensure Required Containers Are Running</strong>
+    <ul>
+      <li>NATS</li>
+      <li>ZooKeeper</li>
+      <li>Flask App</li>
+      <li>OTEL Collector</li>
+      <li>Prometheus</li>
+      <li>Grafana</li>
+    </ul>
+  </li>
+  <li><strong>Run Cirrina Container</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">--name</span> cirrina-instance <span class="se">\</span>
+  <span class="nt">--network</span> xyz <span class="se">\</span>
+  <span class="nt">-e</span> <span class="nv">OTEL_EXPORTER_OTLP_ENDPOINT</span><span class="o">=</span><span class="s2">"http://&lt;otel-container-name&gt;:4317"</span> <span class="se">\</span>
+  &lt;cirrina-image-name&gt; <span class="se">\</span>
+  <span class="nt">--nats-context-url</span> nats://&lt;nats-container-name&gt;:4222/ <span class="se">\</span>
+  <span class="nt">--nats-event-url</span> nats://&lt;nats-container-name&gt;:4222/ <span class="se">\</span>
+  <span class="nt">--zk-url</span> &lt;zookeeper-container-name&gt;:2181
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Link Runtime Name to Jobs</strong><br />
+Update <code class="language-plaintext highlighter-rouge">runtimeName</code> in job files to match the runtime name created.</p>
+  </li>
+  <li><strong>Submit First Job</strong><br />
+Use the <code class="language-plaintext highlighter-rouge">submit_job</code> script. For multiple jobs, change node paths (<code class="language-plaintext highlighter-rouge">/jobs/job0</code>, <code class="language-plaintext highlighter-rouge">/jobs/job1</code>, …).</li>
+</ol>
+
+<hr />
+
+<h2 id="tracking-and-observability">Tracking and Observability</h2>
+
+<ol>
+  <li><strong>Prometheus Metrics</strong>
+    <ul>
+      <li>Check that metrics are pulled from OTEL.</li>
+      <li>Open <code class="language-plaintext highlighter-rouge">http://localhost:9090/metrics</code>.</li>
+    </ul>
+  </li>
+  <li><strong>Grafana Dashboards</strong>
+    <ul>
+      <li>Open Grafana at <code class="language-plaintext highlighter-rouge">http://localhost:3000</code>.</li>
+      <li>Create new dashboards → Add panels → Select metric (e.g., <code class="language-plaintext highlighter-rouge">cirrina-xyz</code>) → Refresh.</li>
+    </ul>
+  </li>
+  <li><strong>Flask App Logs</strong>
+    <ul>
+      <li>Inspect logs to see received POST requests:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker logs xyz-service
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<p>This README provides a complete guide from <strong>environment setup</strong>, <strong>job definition</strong>, to <strong>runtime operation and monitoring</strong>. It is intended for developers or operators deploying Cirrina in a Docker-based environment.</p>
+
+
+          </div>
+        </div>
+      </main>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const toc = document.getElementById("toc");
+  const content = document.getElementById("markdown-content");
+  const headings = content.querySelectorAll("h2, h3, h4");
+
+  headings.forEach(h => {
+    const id = h.id || h.textContent.toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]/g, "");
+    h.id = id;
+
+    const li = document.createElement("li");
+    li.className = h.tagName === "H2" ? "fw-bold mb-1" :  // reduced margin-bottom
+                   h.tagName === "H3" ? "ms-3 mb-1" :
+                   "ms-4 text-muted mb-1";
+
+    const a = document.createElement("a");
+    a.href = "#" + id;
+    a.textContent = h.textContent;
+    a.className = "text-decoration-none d-block py-0.5"; // reduced padding
+
+    a.addEventListener("click", function(e) {
+      e.preventDefault();
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    li.appendChild(a);
+    toc.appendChild(li);
+  });
+});
+</script>
+
+<style>
+#toc-sidebar {
+  top: 0;
+  max-height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: thin; /* Firefox */
+}
+#toc-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+#toc-sidebar::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+#toc a {
+  transition: color 0.2s;
+}
+#toc a:hover {
+  color: #0d6efd;
+  text-decoration: underline;
+}
+#markdown-content h2, 
+#markdown-content h3, 
+#markdown-content h4 {
+  scroll-margin-top: 80px; /* ensure headings are not hidden behind sticky header */
+}
+</style>
+
+
+
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h5 style="color: white;">Distributed and Parallel Systems group</h5>
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/contact/">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <a href="https://www.uibk.ac.at/en/" target="_blank" class="logo-link">
+            <img width="95px" height="40px" alt="DPS" src="/images/logo/uibklogo.png" />
+          </a>
+          
+            <div class="social">
+  
+    <a href="https://github.com/UIBK-DPS-DC" target="blank"><img src="/images/social/github.svg" title="Github" alt="Github" /></a>
+  
+    <a href="https://discord.gg/GDnrBsEtar" target="blank"><img src="/images/social/discord.svg" title="Discord" alt="Discord" /></a>
+  
+</div>
+
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>

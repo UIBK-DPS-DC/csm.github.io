@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Collaborative SMs",
+    "description": "Programming model for reactive, event-driven, and stateful applications across the Cloud-Edge-IoT continuum.",
+    "image": {
+      "url": "images/icons/link-alt.svg",
+      "width": 40,
+      "height": 40
+    }
+  },
+  {
+    "title": "Event-Driven Behavior",
+    "description": "Enables dynamic responses to events, supporting autonomous collaboration between distributed state machines.",
+    "image": {
+      "url": "images/icons/bullseye-pointer.svg",
+      "width": 40,
+      "height": 40
+    }
+  },
+  {
+    "title": "Stateful Computing",
+    "description": "Encapsulates state through inherent machine states and persistent data for consistency and resilience.",
+    "image": {
+      "url": "images/icons/coins.svg",
+      "width": 40,
+      "height": 40
+    }
+  },
+  {
+    "title": "Advanced Data Model",
+    "description": "Supports local, static, and persistent data with defined scopes and lifetimes for efficient processing.",
+    "image": {
+      "url": "images/icons/cubes.svg",
+      "width": 40,
+      "height": 40
+    }
+  },
+  {
+    "title": "Performance boost",
+    "description": "Achieves up to 12x throughput increase and significant reductions in processing times in real-world use cases.",
+    "image": {
+      "url": "images/icons/chart-line-up.svg",
+      "width": 40,
+      "height": 40
+    }
+  }
+]

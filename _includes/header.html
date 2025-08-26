@@ -1,0 +1,24 @@
+<div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="https://dps.uibk.ac.at/" target="_blank" class="logo-link">
+        <img width="{{ site.logo.desktop_width }}" height="{{ site.logo.desktop_height }}" alt="{{ site.title }}" src="{{ site.logo.desktop | relative_url }}" />
+      </a>
+    </div>
+    
+    <style>
+      .logo {
+        display: flex;            /* Align the logos side by side */
+        gap: 10px;                /* Add space between the logos */
+        align-items: left;      /* Vertically align logos in the center */
+      }
+    
+      .logo-link img {
+        display: block;           /* Remove any space below images */
+      }
+    </style>
+    
+    {% include main-menu.html %}
+    {% include hamburger.html %}
+  </div>
+</div>

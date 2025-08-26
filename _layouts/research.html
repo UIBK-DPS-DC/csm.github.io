@@ -1,0 +1,26 @@
+---
+layout: default
+bodyClass: "page-services"
+---
+
+
+<div class="intro">
+  <div class="container">
+    <div class="row justify-content-start w-100">
+      <div class="col-12 col-md-12 mb-12">
+        <h1>Publications</h1>
+        {% for publication in site.publications limit:20 %}
+            <span>
+              <a href={{publication.link}} target="_blank">
+                <div class="publication-summary d-flex align-items-center">
+                <span class="badge custom-badge-iot">{{publication.year}}</span>
+                <p class="ms-3">{{publication.title | markdownify | strip_html | truncate: 500}}</p>
+                </div>
+            </a>
+           </span>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+

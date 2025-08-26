@@ -1,0 +1,1917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <a href="#" id="scrollToTop" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </a>  
+  <script src="/assets/js/scroll-to-top.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <meta charset="utf-8">
+  <title>CSM Specifications version 2.0</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Self host font -->
+  <!-- <link rel="preload" href="/assets/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  
+  <meta property="og:title" content="CSM Specifications version 2.0"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content=""/>
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  
+  
+
+</head>
+
+<body class='page page-services'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/about/">About</a>
+    </li>
+    
+    <li class="active">
+      <a href="/docs/">Documentation</a>
+    </li>
+    
+    <li class="">
+      <a href="/research/">Publications</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Our team</a>
+    </li>
+    
+    <li class="">
+      <a href="/contact/">Contact</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="https://dps.uibk.ac.at/" target="_blank" class="logo-link">
+        <img width="130px" height="40px" alt="DPS" src="/images/logo/dpslogo.png" />
+      </a>
+    </div>
+    
+    <style>
+      .logo {
+        display: flex;            /* Align the logos side by side */
+        gap: 10px;                /* Add space between the logos */
+        align-items: left;      /* Vertically align logos in the center */
+      }
+    
+      .logo-link img {
+        display: block;           /* Remove any space below images */
+      }
+    </style>
+    
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/" 
+         >
+        Home
+        
+      </a>
+
+      
+
+    </li>
+    
+    <li class="">
+      <a href="/about/" 
+         >
+        About
+        
+      </a>
+
+      
+
+    </li>
+    
+    <li class="active">
+      <a href="/docs/" 
+         >
+        Documentation
+        
+      </a>
+
+      
+      <ul class="submenu">
+        
+        <li class="active">
+          <a href="/docs/"
+             >
+            CSM Specifications
+            
+          </a>
+        </li>
+        
+        <li class="">
+          <a href="https://github.com/UIBK-DPS-DC/Cirrina"
+             target="_blank" rel="noopener">
+            Cirrina runtime
+            
+            <span class="link-icon">&#128279;</span>
+            
+          </a>
+        </li>
+        
+        <li class="">
+          <a href="/setup/"
+             >
+            Cirrina setup
+            
+          </a>
+        </li>
+        
+        <li class="">
+          <a href="https://github.com/UIBK-DPS-DC/Cirrina-UseCases"
+             target="_blank" rel="noopener">
+            Use cases
+            
+            <span class="link-icon">&#128279;</span>
+            
+          </a>
+        </li>
+        
+      </ul>
+      
+
+    </li>
+    
+    <li class="">
+      <a href="/research/" 
+         >
+        Publications
+        
+      </a>
+
+      
+
+    </li>
+    
+    <li class="">
+      <a href="/team/" 
+         >
+        Our team
+        
+      </a>
+
+      
+
+    </li>
+    
+    <li class="">
+      <a href="/contact/" 
+         >
+        Contact
+        
+      </a>
+
+      
+
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
+</script>
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+
+
+
+
+<div class="docs" style="font-family: 'Lato','Open Sans','Roboto','Ubuntu','Playfair Display',sans-serif;">
+  <div class="container" style="padding-top: 100px; padding-bottom: 60px;">
+    <div class="row">
+
+      <!-- Sidebar (left) -->
+      <nav id="toc-sidebar" class="col-12 col-md-4 col-lg-3 bg-light border-end position-relative overflow-auto py-3 px-3">
+        <h5 class="fw-bold mb-3">Content</h5>
+        <ul id="toc" class="list-unstyled small mb-0"></ul>
+      </nav>
+
+      <!-- Main content (right) -->
+      <main class="col-12 col-md-8 col-lg-9 px-md-4">
+        <div class="team team-single">
+          <h1 class="subtitle">CSM Specifications version 2.0</h1>
+          <div id="markdown-content" class="content">
+            <p>This document is the Collaborative State Machine language specification.</p>
+
+<p>This specification describes the CSM Language (CSML), its semantics, and its execution model.</p>
+
+<h2 id="background">Background</h2>
+
+<p>Collaborative State Machines (CSM) is a distributed programming model for the Computing Continuum. CSM
+describes distributed applications using state machines deployed onto resources of the Computing Continuum.
+With the Computing Continuum, we currently understand the Cloud-Edge-IoT continuum.</p>
+
+<p>Statecharts <a href="https://www.sciencedirect.com/science/article/pii/0167642387900359">(Harel, 1987)</a>, a visual
+formalism for the declarative description of complex interactive systems, inspired CSM. Where possible, CSML
+is kept consistent with Statecharts. The RHAPSODY semantics of Statecharts
+<a href="https://link.springer.com/chapter/10.1007/978-3-540-27863-4_19">Harel, 2001</a> inspired the execution model
+of CSML. <a href="https://www.w3.org/TR/scxml/">SCXML</a>, a markup language that describes state machine execution
+environments, provided loose inspiration for CSML. Another inspiration for the CSML is the
+<a href="https://xstate.js.org/">XState</a> framework — a language and runtime for state machine execution environments.</p>
+
+<p>The <a href="https://dps.uibk.ac.at">Distributed and Parallel Systems Group</a> of the University of Innsbruck created
+and maintains CSM. A runtime system implementing CSM and CSML is
+<a href="https://git.uibk.ac.at/informatik/dps/dps-dc-software/cirrina">Cirrina</a>.</p>
+
+<h2 id="syntax">Syntax</h2>
+
+<p>CSML uses a serialization language such as JSON to serialize a description. In this document, we will make use
+of a JSON-inspired language. However, CSML is not strictly bound to JSON.</p>
+
+<p>A CSML description consists of <em>constructs</em>, such as those describing a collaborative state machine, state
+machine and state. A construct consists of one or multiple <em>keywords</em>. When using JSON as a serialization
+language, a construct may be an object and a keyword may be a property. Keywords have values of a certain
+type.</p>
+
+<p>Code listings contained in this document follow a JSON-inspired notation. However, ${\ldots constructName}$
+is a placeholder for the construct name. A specific keyword within the construct may be referenced, e.g.,
+${…constructName.name}$. Regular expression notation, such as $+$ may be used to indicate that something
+must occur at least once, $*$ may be used to indicate that something must occur zero or more times, $(a|b)$
+indicates $a$ or $b$, and $(a)?$ indicates that $a$ is optional. Commas are omitted. Single quotes denote
+strings. Double quotes surrounding property names are omitted. This syntax is chosen for code listings to
+avoid clutter.</p>
+
+<h2 id="collaborative-state-machine">Collaborative State Machine</h2>
+
+<div class="text-center my-3">
+  <img src="/images/memory.jpg" alt="Figure 1: An example of a CSM description" class="img-fluid" style="max-width: 70%;" />
+  <p class="text-muted fst-italic mt-2">
+    Figure 1: An example of a CSM description. Components can have data represented by $\{...\}$.
+  </p>
+</div>
+
+<p>CSML is used to create CSM <em>descriptions</em>. A description represents the static structure of an application
+that is executable by a CSM runtime system.</p>
+
+<p>A CSM <em>description</em> takes the form of a tree structure. At its root is a <em>collaborative state machine</em>,
+encompassing one or more <em>state machines</em>. A state machine contains one or more <em>states</em>. These fundamental
+entities — collaborative state machine, state machines, and states — are called <em>components</em>. Every
+component can declare <em>local</em> and <em>persistent</em> (globally accessible) data.</p>
+
+<p>Figure 1 above illustrates a CSM tree structure. The presented collaborative state machine has two state
+machines, $SM_1$ and $SM_2$, along with a nested state machine denoted as $SM_{21}$. Every state machine
+has two <em>atomic states</em>. The data variables of all components are represented by $a, \ldots, h$.</p>
+
+<h3 id="data">Data</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>({ variables: [ {...variable}* ] } | [ {...variable}* ])
+</code></pre></div></div>
+
+<p><em>Listing 1: A data construct, since the data construct only has one keyword, it can be shortened to just the</em>
+<em>list of variables.</em></p>
+
+<p>A data construct is used to lexically declare data within a certain scope, see
+<a href="#data-model-manipulation-and-scope">dynamic extent</a>. Data may be persistent, local, or static. Persistent
+data is available persistently throughout and possibly outside the collaborative state machine. Local data is
+restricted to a subset of components of the collaborative state machine. Static data is specific to states.</p>
+
+<p>The following keywords can/must be provided in addition to the keywords:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Keyword</strong></th>
+      <th><strong>Description</strong></th>
+      <th><strong>Type</strong></th>
+      <th><strong>Optional</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>variables</td>
+      <td>Collection of variables declaring data.</td>
+      <td>list of <a href="#variable">variable</a></td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="data-variables">Data Variables</h4>
+
+<p>The <em>variables</em> keyword is used to declare variables. Their scope and lifetime are bound to the associated
+<em>persistentData</em>, <em>localData</em>, or <em>staticData</em> keyword.</p>
+
+<h3 id="variable">Variable</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    name: 'var'
+    value: {...expression}
+}
+</code></pre></div></div>
+
+<p><em>Listing 2: A variable construct.</em></p>
+
+<p>A variable declares data, it does so by providing an expression that, when evaluated, results in a data value.</p>
+
+<p>The following keywords can/must be provided in addition to the keywords:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Keyword</strong></th>
+      <th><strong>Description</strong></th>
+      <th><strong>Type</strong></th>
+      <th><strong>Optional</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>name</td>
+      <td>Name of the variable.</td>
+      <td>string</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>value</td>
+      <td>Value expression.</td>
+      <td><a href="#expression">expression</a></td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="variable-name">Variable Name</h4>
+
+<p>The <em>name</em> keyword specifies the name of the variable. It serves to reference the variable. Whether a variable
+is in scope is dependent on how it is declared, see <a href="#data-model-manipulation-and-scope">dynamic extent</a>.
+Within a scope, the name of a variable must be unique. The validity of a variable name is
+implementation-specific.</p>
+
+<h4 id="variable-value">Variable Value</h4>
+
+<p>The <em>value</em> keyword specifies the value expression of the variable. When evaluated, the value expression
+yields the variable’s (initial) value. Evaluation of a value expression is implementation-specific.</p>
+
+<h3 id="variable-reference">Variable Reference</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>({ reference: {...variable.name} } | {...variable.name})
+</code></pre></div></div>
+
+<p><em>Listing 3: A variable reference construct, since the variable reference construct only has one keyword, it</em>
+<em>can be shortened to just the reference (variable name).</em></p>
+
+<p>A variable may be referenced, for instance, to indicate that the output of some action must be written to an
+existing variable in scope.</p>
+
+<p>The following keywords can/must be provided in addition to the keywords:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Keyword</strong></th>
+      <th><strong>Description</strong></th>
+      <th><strong>Type</strong></th>
+      <th><strong>Optional</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>reference</td>
+      <td>Name of the referenced variable.</td>
+      <td><a href="#variable-name">variable.name</a></td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="variable-reference-name">Variable Reference Name</h4>
+
+<p>The <em>reference</em> keyword specifies the name of the variable that is referenced.</p>
+
+<ul>
+  <li>The variable reference must be an existing variable in scope.</li>
+</ul>
+
+<h3 id="expression">Expression</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>({ expression: '5+5+v' } | '5+5+v')
+</code></pre></div></div>
+
+<p><em>Listing 4: An expression construct, since the expression construct only has one keyword, it can be shortened</em>
+<em>to just the expression string.</em></p>
+
+<p>An expression represents an evaluable one-line expression that serves to produce an output value. Expressions
+are used throughout CSML to represent boolean expressions as well as data expressions. Depending on the
+expression language supported by the runtime system implementation, additional functionality may be available,
+such as the execution of functions, boolean logic, or arithmetic.</p>
+
+<p>The following keywords can/must be provided in addition to the keywords:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Keyword</strong></th>
+      <th><strong>Description</strong></th>
+      <th><strong>Type</strong></th>
+      <th><strong>Optional</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>expression</td>
+      <td>The expression.</td>
+      <td>string</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="expression-1">Expression</h4>
+
+<p>The <em>expression</em> keyword specifies the expression string (source code) that is evaluated to acquire a certain
+value. The evaluation of an expression, e.g., the supported syntax, is implementation-specific.</p>
+
+<h3 id="guard">Guard</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    expression: 'v==5'
+    name: 'guard'
+}
+</code></pre></div></div>
+
+<p><em>Listing 5: A guard construct.</em></p>
+
+<p>A guard is an expression that evaluates to a boolean value. Guards are used within transitions, to determine
+whether a transition is taken.</p>
+
+<p>The following keywords can/must be provided in addition to the keywords:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Keyword</strong></th>
+      <th><strong>Description</strong></th>
+      <th><strong>Type</strong></th>
+      <th><strong>Optional</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>expression</td>
+      <td>The guard expression.</td>
+      <td>string</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="guard-expression">Guard Expression</h4>
+
+<p>The <em>expression</em> keyword specifies the guard expression.</p>
+
+<ul>
+  <li>The guard expression must evaluate to a boolean value.</li>
+</ul>
+
+<h3 id="collaborative-state-machine-1">Collaborative State Machine</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    name: 'CSM'
+    version: {...version}
+    memoryMode: {...memoryMode}
+    stateMachines: [
+        {...stateMachine}+
+    ]
+    (localData: {...data})?
+    (persistentData: {...data})?
+}
+</code></pre></div></div>
+
+<p><em>Listing 5: A collaborative state machine construct.</em></p>
+
+<p>State machines draw inspiration from statecharts, emphasizing compatibility with statecharts’ features.
+Their primary function lies in exhibiting autonomous, event-driven behavior through state transitions.
+Actions can occur during transitions, upon entering or exiting a state, and while present in a state.
+These actions encompass a range of activities, including invoking computational services, manipulating
+data, and raising events. A collaborative state machine goes beyond the singular state machines of
+statecharts by modeling an application as a collection of one or more state machines distributed over the
+Computing Continuum. State machines are designed to collaborate seamlessly with each other through raising
+and handling events, and sharing data. CSM includes a data model spanning <em>persistent</em>, <em>local</em>, and
+<em>static</em> data.</p>
+
+<p>The memory mode specifies the permitted degree of distribution of state machines across the Computing
+Continuum. Local and persistent data can be declared through the specification of variables. The data declared
+within the description of a component is termed <em>lexically</em> declared, indicating that it is inherently created
+as part of the description, as opposed to being <em>dynamically</em> generated based on actions. Data values are
+expressions evaluated to acquire a variable’s actual value.</p>
+
+<p>The following keywords can/must be provided in addition to the keywords:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Keyword</strong></th>
+      <th><strong>Description</strong></th>
+      <th><strong>Type</strong></th>
+      <th><strong>Optional</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>name</td>
+      <td>Name of the collaborative state machine.</td>
+      <td>string</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>version</td>
+      <td>CSML version.</td>
+      <td><a href="#collaborative-state-machine-version">version</a></td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>memoryMode</td>
+      <td>Memory mode of the collaborative state machine.</td>
+      <td><a href="#collaborative-state-machine-memory-mode">memory mode</a></td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>stateMachines</td>
+      <td>Collection of state machines.</td>
+      <td>list of <a href="#state-machine">state machine</a></td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>localData</td>
+      <td>Local data.</td>
+      <td><a href="#data">data</a></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>persistentData</td>
+      <td>Persistent data.</td>
+      <td><a href="#data">data</a></td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="collaborative-state-machine-name">Collaborative State Machine Name</h4>
+
+<p>The <em>name</em> keyword specifies the name of the collaborative state machine and may be used for diagnostic
+purposes. The validity of a name is implementation-specific. The name of the collaborative state machine is
+not referenced within the collaborative state machine and only serves to identify the collaborative state
+machine amongst other collaborative state machines.</p>
+
+<h4 id="collaborative-state-machine-version">Collaborative State Machine Version</h4>
+
+<p>The <em>version</em> keyword specifies the CSML version used within a description and is used to ensure
+backward-compatibility. The CSML version is bound to a version of these specifications. A runtime system
+implementation’s support for varying CSML versions is implementation-specific.</p>
+
+<p>The version is a string enumeration and must be one of the following:</p>
+
+<ul>
+  <li>1.0</li>
+</ul>
+
+<h4 id="collaborative-state-machine-memory-mode">Collaborative State Machine Memory Mode</h4>
+
+<p>The <em>memoryMode</em> keyword specifies the <a href="#memory">memory mode</a> of the complete collaborative state machine. The
+memory mode applies to the entire collaborative state machine.</p>
+
+<p>The memory mode is a string enumeration and must be one of the following:</p>
+
+<ul>
+  <li>distributed</li>
+  <li>shared</li>
+</ul>
+
+<h4 id="collaborative-state-machine-state-machines">Collaborative State Machine State Machines</h4>
+
+<p>The <em>stateMachines</em> keyword is used to specify the collection of state machines included in the collaborative
+state machine.</p>
+
+<ul>
+  <li>At least one state machine must be declared.</li>
+</ul>
+
+<h4 id="collaborative-state-machine-localpersistent-data">Collaborative State Machine Local/Persistent Data</h4>
+
+<p>The <em>localData</em> and <em>persistentData</em> keywords allow for <em>lexically</em> declaring respectively the local
+and persistent data at the collaborative state machine level. Depending on the memory mode of the
+collaborative state machine, either or both types of data will be accessible within the collaborative state
+machine, see <a href="#data-model-manipulation-and-scope">dynamic extent</a>.</p>
+
+<h3 id="state-machine">State Machine</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    name: 'SM2'
+    states: [
+        {...(state)}+
+    ]
+    stateMachines: [
+        {...(stateMachine)}+
+    ]
+    (localData: {...data})?
+    (persistentData: {...data})?
+}
+</code></pre></div></div>
+
+<p><em>Listing 6: A state machine construct.</em></p>
+
+<p>The purpose of state machines is to model event-driven execution behavior in the Computing Continuum by
+enabling the transitioning between states or accommodating nested state machines. Nested state machines
+allow for expressing concurrent behavior within a state machine, enabling observation and intervention in the
+execution behavior of the parent state machine. They start simultaneously with the parent state machine. A
+state machine can contain one or more states that can be reached through state transitions. At any given time, only one
+state within a state machine is considered active, rendering all other states within that state machine
+inactive. Like the collaborative state machine, local and persistent data can be declared.</p>
+
+<p>The following keywords can/must be provided in addition to the keywords:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Keyword</strong></th>
+      <th><strong>Description</strong></th>
+      <th><strong>Type</strong></th>
+      <th><strong>Optional</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>name</td>
+      <td>Name of the state machine.</td>
+      <td>string</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>states</td>
+      <td>Collection of states.</td>
+      <td>list of <a href="#state">state</a></td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>stateMachines</td>
+      <td>Collection of state machines.</td>
+      <td>list of <a href="#state-machine">state machine</a></td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>localData</td>
+      <td>Local data.</td>
+      <td><a href="#data">data</a></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>persistentData</td>
+      <td>Persistent data.</td>
+      <td><a href="#data">data</a></td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="state-machine-name">State Machine Name</h4>
+
+<p>The <em>name</em> keyword specifies the name of the state machine and may be used for diagnostic purposes or
+referencing. The validity of a name is implementation-specific. The name of a state machine is not referenced
+inside a description. However, depending on the runtime system implementation, a state machine may be
+addressed using its name at runtime</p>
+
+<h4 id="state-machine-states">State Machine States</h4>
+
+<p>The <em>states</em> keyword is used to specify the collection of atomic states included in the state machine. Atomic 
+states are described using the <a href="#state">state</a> construct.</p>
+
+<ul>
+  <li>At least one state must be declared.</li>
+  <li><a href="#state-name">State names</a> must be unique.</li>
+  <li>Exactly one <a href="#state-initial">initial state</a> must be declared.</li>
+  <li>Initial states must not have inward transitions.</li>
+  <li>Terminal states must not have outward transitions.</li>
+  <li>Every state must be reachable (it must have a transition leading into it, or it must be the initial state).</li>
+</ul>
+
+<h4 id="state-machine-nested-state-machines">State Machine Nested State Machines</h4>
+
+<p>The <em>stateMachines</em> keyword is used to specify the collection of nested state machines. Nested state machines 
+are described using the <a href="#state-machine">state machine</a> construct.</p>
+
+<h4 id="state-machine-localpersistent-data">State Machine Local/Persistent Data</h4>
+
+<p>The <em>localData</em> and <em>persistentData</em> keywords allow for <em>lexically</em> declaring respectively the local and
+persistent data at the state machine level. Data described at the state machine level is accessible from the
+state machine and any component hierarchically below it, see
+<a href="#data-model-manipulation-and-scope">dynamic extent</a>.</p>
+
+<h3 id="state">State</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    name: 'Sd'
+    (initial: (true|false))?
+    (terminal: (true|false))?
+    (entry: [
+        {...(action)}*
+    ])?
+    (exit: [
+        {...(action)}*
+    ])?
+    (while: [
+        {...(action)}*
+    ])?
+    (after: [
+        {...(action)}*
+    ])?
+    (on: [
+        {...(onTransition)}*
+    ])?
+    (always: [
+        {...(transition)}*
+    ])?
+    (localData: {...data})?
+    (persistentData: {...data})?
+    (staticData: {...data})?
+}
+</code></pre></div></div>
+
+<p><em>Listing 7: A state construct.</em></p>
+
+<p>A state represents a potentially active state, which can be activated by entering through a state transition
+and can be <em>initial</em>, <em>terminal</em>, or neither (intermediate). There must be exactly one initial state within a
+state machine. A terminal state, of which multiple can exist, indicates the end of the lifecycle of the
+containing state machine. State transitions are specified as <em>always</em> or <em>on</em> transitions. Always
+transitions, possibly guarded with expressions, are taken without events, similar to the non-event-driven
+transitions between the tasks of workflows. On-event transitions drive the event-driven nature of state
+machines, allowing a state transition based on a received event. Events may be generated from the state
+machine itself, other state machines, as well as from the environment external to CSM (for instance, an
+external application or device). Actions executed in a state include <em>entry</em> and <em>exit</em> actions upon entering
+or exiting the state. <em>While</em> actions are executed while the state is active. Timed actions are declared
+using the <em>after</em> keyword. Actions can either be referenced by name or can be declared in-line. Like previous
+constructs, a state allows for lexically declaring local, static, and persistent data. An additional type of
+data, <em>static</em> data, utilizes the capability of the state for re-entry, allowing data to retain their values
+between exiting and re-entering the state.</p>
+
+<p>The following keywords can/must be provided in addition to the keywords:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Keyword</strong></th>
+      <th><strong>Description</strong></th>
+      <th><strong>Type</strong></th>
+      <th><strong>Optional</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>name</td>
+      <td>Name of the state.</td>
+      <td>string</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>initial</td>
+      <td>Initial flag of the state.</td>
+      <td>boolean</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>terminal</td>
+      <td>Terminal flag of the state.</td>
+      <td>boolean</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>entry</td>
+      <td>Entry actions.</td>
+      <td>list of <a href="#action">action</a></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>exit</td>
+      <td>Exit actions.</td>
+      <td>list of <a href="#action">action</a></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>while</td>
+      <td>While actions.</td>
+      <td>list of <a href="#action">action</a></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>after</td>
+      <td>After actions.</td>
+      <td>list of <a href="#timeout-reset-action">timeout action</a></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>on</td>
+      <td>On event transitions.</td>
+      <td>list of <a href="#on-transition">on-transition</a></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>always</td>
+      <td>Always transitions.</td>
+      <td>list of <a href="#transition">transition</a></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>localData</td>
+      <td>Local data.</td>
+      <td><a href="#data">data</a></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>persistentData</td>
+      <td>Persistent data.</td>
+      <td><a href="#data">data</a></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>staticData</td>
+      <td>Static data.</td>
+      <td><a href="#data">data</a></td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="state-name">State Name</h4>
+
+<p>The <em>name</em> keyword specifies the name of the state and may be used for diagnostic purposes or referencing.
+The validity of a name is implementation-specific. A state’s name is referenced throughout the state machine
+to indicate the transition target.</p>
+
+<h4 id="state-initial">State Initial</h4>
+
+<p>The <em>initial</em> keyword specifies whether a state is the initial state of the containing state machine.</p>
+
+<ul>
+  <li>Exactly one <a href="#state-initial">initial state</a> must be declared.</li>
+  <li>Initial states must not have inward transitions.</li>
+</ul>
+
+<h4 id="state-terminal">State Terminal</h4>
+
+<p>The <em>terminal</em> keyword specifies whether a state is a terminal state of the containing state machine.</p>
+
+<ul>
+  <li>Multiple states may be declared <a href="#state-terminal">terminal</a>.</li>
+  <li>Terminal states must not have outward transitions.</li>
+</ul>
+
+<h4 id="state-entryexitwhileafter">State Entry/Exit/While/After</h4>
+
+<p>The <em>entry</em> keyword specifies the actions executed upon entry of the state. The <em>exit</em> keyword specifies the
+actions executed upon exiting the state. The <em>while</em> keyword specifies the actions executed while in a
+state. The <em>after</em> keyword specifies the actions executed upon a timeout. Actions may be declared
+in-line, in which case an action name is not required. Actions may also be referenced by name. Actions
+executed within a state have state scope, see <a href="#data-model-manipulation-and-scope">dynamic extent</a>.</p>
+
+<ul>
+  <li>An action reference must be a valid action name.</li>
+</ul>
+
+<h4 id="state-on">State On</h4>
+
+<p>The <em>on</em> keyword specifies the transitions that can occur based on events.</p>
+
+<ul>
+  <li>The referenced event in an on-transition must be raised within the collaborative state machine.</li>
+</ul>
+
+<h4 id="state-always">State Always</h4>
+
+<p>The <em>always</em> keyword specifies the transitions that can occur regardless of raised events.</p>
+
+<h4 id="state-localpersistent-data">State Local/Persistent Data</h4>
+
+<p>The <em>localData</em>, <em>persistentData</em>, and <em>staticData</em> keywords allow for <em>lexically</em> declaring respectively the
+local, persistent, and static data at the state machine level. Static data is unique to states and is
+available after re-entry of a state. Data described at the state level is accessible from the state machine
+and any component hierarchically below it, see <a href="#data-model-manipulation-and-scope">dynamic extent</a>.</p>
+
+<h3 id="event">Event</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    name: 'e1'
+    channel: {...eventChannel}
+    (data: [
+        {...variable}*
+    ])?
+}
+</code></pre></div></div>
+
+<p><em>Listing 8: An event construct.</em></p>
+
+<p>Events are raised and handled by state machines in the collaborative state machine and are matched based on
+their name. Events fall into three categories: <em>internal</em>, <em>external</em>, and <em>global</em>. Internal events are
+exclusively handled by the state machine that raised them and not seen by other state machines. External
+events are received by state machines that have subscribed to the events raised by other state machines. This
+linkage introduces decentralization, allowing state machines to dynamically subscribe to events of interest
+raised by other state machines. For instance, consider Edge devices expressing interest in events raised by
+connected IoT devices. The subscription to events from ‘connected’ IoT devices exemplifies the concept of
+external events. Global events are not tied to any specific source state machine and are universally seen by
+every state machine. This universal handling establishes a global communication channel within the
+application. A raised event may contain data transmitted to the receiver; an expression is used to gather the
+data to include with the event. When a state machine processes the received event and takes a transition, the 
+event data is assigned to the current state’s <a href="#data-model-manipulation-and-scope">dynamic extent</a> using the 
+name and value of each provided context variable. This overrides existing variables or creates new variables 
+if they don’t exist within the dynamic extent.</p>
+
+<p>The following keywords can/must be provided in addition to the keywords:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Keyword</strong></th>
+      <th><strong>Description</strong></th>
+      <th><strong>Type</strong></th>
+      <th><strong>Optional</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>name</td>
+      <td>Event name.</td>
+      <td>string</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>channel</td>
+      <td>Event channel.</td>
+      <td><a href="#event-channel">event channel</a></td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>data</td>
+      <td>Event data.</td>
+      <td>list of <a href="#variable">variable</a></td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="event-name">Event Name</h4>
+
+<p>The <em>name</em> keyword specifies the event name. Events are matched according to their name. The validity of the
+event name is implementation-specific. Event names may be re-used.</p>
+
+<h4 id="event-channel">Event Channel</h4>
+
+<p>The <em>eventChannel</em> keyword specifies the event channel of the raised event.</p>
+
+<p>The event channel is a string enumeration and must be one of the following:</p>
+
+<ul>
+  <li>internal</li>
+  <li>external</li>
+  <li>global</li>
+</ul>
+
+<h4 id="event-data">Event Data</h4>
+
+<p>The <em>data</em> keyword specifies the event data contained within the event. Event data will be assigned to the
+<a href="#data-model-manipulation-and-scope">dynamic extent</a> of the state machine’s current state which processes 
+the event and takes a transition.</p>
+
+<p>Event data can be accessed inside expressions by their variable names, with event data variables prefixed by a <em>$</em> to indicate their special status compared to context variables. The lifetime of event data is bound to the transition following the event and any subsequently executed actions.</p>
+
+<h3 id="transition">Transition</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    target: {...state.name}
+    (guards: [
+        {...(guard.name|guard)}*
+    ])?
+    (actions: [
+        {...(action.name|action)}*
+    ])?
+    (else: {...state.name})?
+}
+</code></pre></div></div>
+
+<p><em>Listing 9: A transition construct.</em></p>
+
+<p>A state transition enables the transitioning between the states of a state machine. The result of a state
+transition is exiting the currently active state and entering the newly active state. CSML supports <em>external</em>
+transitions, using the <em>target</em> keyword to specify a target state towards which the transition is
+directed within the same state machine. A state may externally transition into itself by declaring a
+transition with its state name. Optionally, the target state may be omitted, leading to an <em>internal</em>
+transition. In this case, the state machine stays in its current state, bypassing the execution of any actions
+triggered by entering or exiting a state while still carrying out the transition actions. Guard conditions are
+provided as expressions in the context of transitions. A guard expression
+$E : \mathbb{R}^n \to {\text{true}, \text{false}}$ takes the form where $\mathbb{R}^n$ represents the
+domain, consisting of all variables in scope, see <a href="#data-model-manipulation-and-scope">dynamic extent</a>.
+To initiate a transition, the conjunction of all guard expressions must collectively be evaluated to true.
+The <em>actions</em> keyword is used to specify the actions executed when the transition is taken.</p>
+
+<ul>
+  <li>Transitions must be mutually exclusive.</li>
+</ul>
+
+<p>The following keywords can/must be provided in addition to the keywords:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Keyword</strong></th>
+      <th><strong>Description</strong></th>
+      <th><strong>Type</strong></th>
+      <th><strong>Optional</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>target</td>
+      <td>Target state name.</td>
+      <td><a href="#state-name">state name</a></td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>guards</td>
+      <td>Guard conditions.</td>
+      <td>list of <a href="#guard">guard</a></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>actions</td>
+      <td>Transition actions.</td>
+      <td>list of <a href="#action">action</a></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>else</td>
+      <td>Else target.</td>
+      <td><a href="#state-name">state name</a></td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="on-transition">On-Transition</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    event: {...event.name}
+    target: {...state.name}
+    (guards: [
+        {...(guard.name|guard)}*
+    ])?
+    (actions: [
+        {...(action.name|action)}*
+    ])?
+    (else: {...state.name})?
+}
+</code></pre></div></div>
+
+<p><em>Listing 10: An on-transition construct.</em></p>
+
+<p>The on-transition construct is a specialization of the transition construct, adding the <em>event</em> keyword that
+specifies the event that triggers the transition.</p>
+
+<p>The following keywords can/must be provided in addition to the keywords:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Keyword</strong></th>
+      <th><strong>Description</strong></th>
+      <th><strong>Type</strong></th>
+      <th><strong>Optional</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>event</td>
+      <td>Event responding to.</td>
+      <td>string</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="transition-target">Transition Target</h4>
+
+<p>The <em>target</em> keyword specifies the <a href="#state-name">state name</a> to transition into.</p>
+
+<ul>
+  <li>The target state name must be valid.</li>
+</ul>
+
+<h4 id="transition-guards">Transition Guards</h4>
+
+<p>The <em>guards</em> keyword specifies the guard conditions of the transition. All guard expressions must evaluate to
+boolean true for the transition to be taken.</p>
+
+<ul>
+  <li>The guard expression must evaluate to boolean true or false.</li>
+</ul>
+
+<h4 id="transition-actions">Transition Actions</h4>
+
+<p>The <em>actions</em> keyword specifies the actions executed as part of the transition. Actions may be declared
+in-line, in which case an action name is not required. Actions may also be referenced by name. Actions
+executed within a state have state-scope, see <a href="#data-model-manipulation-and-scope">dynamic extent</a>.</p>
+
+<ul>
+  <li>An action reference must be a valid action name.</li>
+</ul>
+
+<h4 id="transition-else">Transition Else</h4>
+
+<p>The <em>else</em> keyword specifies the state to transition into, should the guard condition not evaluate to boolean
+true.</p>
+
+<ul>
+  <li>The else state name must be valid.</li>
+</ul>
+
+<h4 id="on-transition-event">On-Transition Event</h4>
+
+<p>The <em>event</em> keyword specifies the name of an event that triggers the on-transition.</p>
+
+<ul>
+  <li>The name of the event must be an event raised within the collaborative state machine.</li>
+</ul>
+
+<h3 id="action">Action</h3>
+
+<p>Various types of action constructs exist in CSML. The following sections specify each.</p>
+
+<h4 id="invoke-action">Invoke Action</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    type: 'invoke'
+    serviceType: 'serviceTypeName'
+    (local: (true|false))?
+    (input: [
+        {...variable}*
+    ])?
+    (output: [
+        {...variableReference}*
+    ])?
+    (done: [
+        {...event}*
+    ])?
+    (properties: [
+        {...property}*
+    ])
+}
+</code></pre></div></div>
+
+<p><em>Listing 11: An invoke action construct.</em></p>
+
+<p>An invoke action allows invoking a defined <em>service type</em>. In this context, ‘type’ in ‘service type’ refers to
+the service abstraction of CSML. When invoking a service type, the description does not explicitly define a
+specific implementation of a service. Instead, a service type may encompass multiple variations of a
+particular service which can be implemented differently; for instance, they could use different algorithms,
+optimize for varying computational resources, or use approximate methods for computational operations to save
+costs. The decision on the exact implementation to use within a given context is left to the underlying
+runtime system implementation, which can make informed decisions based on the available information of the
+user or environment (e.g., to optimize for different performance objectives). The <em>properties</em> keyword
+facilitates the specification of hints (e.g., estimated runtime or memory requirements) to the runtime system,
+which can use it, for instance, to steer the selection of a particular service implementation. Input data for
+the service type invocation can be provided as one or multiple expressions, specified alongside the <em>input</em>
+keyword. To handle actions executed after the invocation of the service type, <em>done</em> events can be declared.
+In handling these events, the output data of the invoked service is available for storage, passing to
+subsequent invocations/events or other actions. A true value alongside the <em>local</em> keyword indicates to a
+runtime system implementation that the service should be invoked locally (on the resource where the state
+machine is executed) if possible. In case the keyword is omitted or has the value false, the service
+invocation occurs remotely, possibly on another resource.</p>
+
+<p>The following keywords can/must be provided in addition to the keywords:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Keyword</strong></th>
+      <th><strong>Description</strong></th>
+      <th><strong>Type</strong></th>
+      <th><strong>Optional</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>Type of action.</td>
+      <td>string</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>serviceType</td>
+      <td>Service type name.</td>
+      <td>string</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>local</td>
+      <td>Local execution flag.</td>
+      <td>boolean</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>input</td>
+      <td>Input data.</td>
+      <td>list of <a href="#variable">variable</a></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>output</td>
+      <td>Output data reference.</td>
+      <td>list of <a href="#variable-reference">variable reference</a></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>done</td>
+      <td>Done events.</td>
+      <td>list of <a href="#event">event</a></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>properties</td>
+      <td>Runtime hints.</td>
+      <td>list of property</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="invoke-action-service-type">Invoke Action Service Type</h5>
+
+<p>The <em>serviceType</em> keyword specifies the invoked service type. The service type is provided as a string value,
+it is up to the runtime system implementation to determine the validity of the service type name or to
+provide a naming schema for service types.</p>
+
+<h5 id="invoke-action-local">Invoke Action Local</h5>
+
+<p>The <em>local</em> keyword provides a hint to the runtime system implementation that the service type is intended to
+be invoked locally, in case of boolean true. Otherwise, it is not specified where the runtime system
+implementation should invoke the service type.</p>
+
+<h5 id="invoke-action-input">Invoke Action Input</h5>
+
+<p>The <em>input</em> keyword specifies the input to the invoked service type.</p>
+
+<h5 id="invoke-action-output">Invoke Action Output</h5>
+
+<p>The <em>output</em> keyword specifies context variables where the output of the invoked service type should be stored. 
+This is done by matching context variables received as output from the service invocation with the output 
+references defined using this keyword. Variable references can be local, static or persistent context variables.</p>
+
+<h5 id="invoke-action-done">Invoke Action Done</h5>
+
+<p>The <em>done</em> keyword specifies the events raised after invocation. Raising done events allows for asynchronous
+service type invocation, allow transitioning into subsequent states whenever the service type invocation has
+been completed.</p>
+
+<h5 id="invoke-action-properties">Invoke Action Properties</h5>
+
+<p>The <em>properties</em> keyword specifies hints provided to the runtime system implementation to direct the
+invocation. Hints may, for example, indicate among several service implementations, the service to select.
+The supported hints and specifications are runtime system implementation-specific.</p>
+
+<h4 id="data-action">Data Action</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    type: 'create'
+    variable: {...variable}
+    (persistent: (true|false))?
+}
+
+{
+    type: 'assign'
+    variable: {...variableReference}
+    value: {...expression}
+}
+
+{
+    type: 'delete'
+    variable: {...variableReference}
+}
+</code></pre></div></div>
+
+<p><em>Listing 12: A create, assign, and delete action construct.</em></p>
+
+<p>Data manipulation actions enable the dynamic creation of variables as local or persistent data, the assignment
+of values to existing variables, and the deletion of variables. When creating a variable, the <em>persistent</em>
+keyword is used to specify whether the variable should be created persistently. In case the keyword is omitted
+or has the value false, the variable is locally created in the current scope.</p>
+
+<p>The following keywords can/must be provided in addition to the keywords (create action construct):</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Keyword</strong></th>
+      <th><strong>Description</strong></th>
+      <th><strong>Type</strong></th>
+      <th><strong>Optional</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>Type of action.</td>
+      <td>string</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>variable</td>
+      <td>Variable to create.</td>
+      <td><a href="#variable">variable</a></td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>persistent</td>
+      <td>Whether to create data persistently.</td>
+      <td>boolean</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The following keywords can/must be provided in addition to the keywords (assign action construct):</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Keyword</strong></th>
+      <th><strong>Description</strong></th>
+      <th><strong>Type</strong></th>
+      <th><strong>Optional</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>Type of action.</td>
+      <td>string</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>variable</td>
+      <td>Variable reference to assign to.</td>
+      <td><a href="#variable-reference">variable reference</a></td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>value</td>
+      <td>Value expression.</td>
+      <td><a href="#expression">expression</a></td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The following keywords can/must be provided in addition to the keywords (delete action construct):</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Keyword</strong></th>
+      <th><strong>Description</strong></th>
+      <th><strong>Type</strong></th>
+      <th><strong>Optional</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>Type of action.</td>
+      <td>string</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>variable</td>
+      <td>Variable reference to delete.</td>
+      <td><a href="#variable-reference">variable reference</a></td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="data-action-variable">Data Action Variable</h5>
+
+<p>The <em>variable</em> keyword specifies the variable to create or the variable reference to manipulate.</p>
+
+<ul>
+  <li>When creating a variable, the variable must not exist.</li>
+  <li>When manipulating an existing variable, the variable must exist.</li>
+</ul>
+
+<h5 id="data-action-persistent">Data Action Persistent</h5>
+
+<p>The <em>persistent</em> keyword specifies, for a create action, whether the variable needs to be created
+persistently. In case it must, the variable is created in the persistent data. Otherwise, the variable is
+locally created in the current scope.</p>
+
+<h5 id="data-action-value">Data Action Value</h5>
+
+<p>The <em>value</em> keyword specifies the value expression for an assign action. The expression is evaluated to
+acquire the data value assigned to the variable.</p>
+
+<h4 id="raise-event-action">Raise Event Action</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    type: 'raiseEvent'
+    event: {...event}
+}
+</code></pre></div></div>
+
+<p><em>Listing 13: A raise event action construct.</em></p>
+
+<p>The raise event action enables a state machine to raise an event that is subsequently handled by another state
+machine or the state machine itself.</p>
+
+<p>The following keywords can/must be provided in addition to the keywords (raise action construct):</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Keyword</strong></th>
+      <th><strong>Description</strong></th>
+      <th><strong>Type</strong></th>
+      <th><strong>Optional</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>Type of action.</td>
+      <td>string</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>event</td>
+      <td>The event to raise.</td>
+      <td><a href="#event">event</a></td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="raise-event-action-event">Raise Event Action Event</h5>
+
+<p>The <em>event</em> specifies the event to raise within the collaborative state machine.</p>
+
+<h4 id="timeout-reset-action">Timeout (Reset) Action</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    delay: {...expression},
+    actions: [
+        {...action}*
+    ]
+}
+
+{
+    action: {...action.name}
+}
+</code></pre></div></div>
+
+<p><em>Listing 14: A timeout and timeout reset action construct.</em></p>
+
+<p>A special type of action, the <em>timeout</em> action, is used in conjunction with the <em>after</em> keyword introduced
+earlier in this section. The timeout action specifies a delay, after which the specified action is executed.
+The provided action must be a raise event action so subsequent behavior can be triggered upon a raised event.
+Timeouts can be reset based on the <em>reset timeout</em> action.</p>
+
+<p>The following keywords can/must be provided in addition to the keywords (timeout action construct):</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Keyword</strong></th>
+      <th><strong>Description</strong></th>
+      <th><strong>Type</strong></th>
+      <th><strong>Optional</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>Type of action.</td>
+      <td>string</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>delay</td>
+      <td>The event to raise.</td>
+      <td><a href="#expression">expression</a></td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>actions</td>
+      <td>The event to raise.</td>
+      <td>list of <a href="#action">action</a></td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The following keywords can/must be provided in addition to the keywords (timeout reset action construct):</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Keyword</strong></th>
+      <th><strong>Description</strong></th>
+      <th><strong>Type</strong></th>
+      <th><strong>Optional</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>Type of action.</td>
+      <td>string</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>action</td>
+      <td>The timeout action to reset.</td>
+      <td><a href="#action-name">action name</a></td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="timeout-action-delay">Timeout Action Delay</h5>
+
+<p>The <em>delay</em> keyword specifies the delay expression evaluated to provide the delay value. The delay value is
+specified in milliseconds.</p>
+
+<ul>
+  <li>The delay expression must be evaluated to a numeric value.</li>
+</ul>
+
+<h5 id="timeout-action-actions">Timeout Action Actions</h5>
+
+<p>The <em>actions</em> keyword specifies the actions to execute upon the timeout. The actions provided must necessarily
+be raised event actions to not interfere with the execution of a state machine, but instead, handle any
+subsequently executable behavior within the state machine’s execution behavior.</p>
+
+<ul>
+  <li>The actions provided as timeout actions must be raise event actions.</li>
+</ul>
+
+<h5 id="timeout-reset-action-action">Timeout Reset Action Action</h5>
+
+<p>The <em>action</em> keyword specifies the timeout action to reset. The action referenced must be a previously
+executed timeout action.</p>
+
+<ul>
+  <li>The action reference provided must be a previously executed timeout action.</li>
+</ul>
+
+<h2 id="memory">Memory</h2>
+
+<p>A collaborative state machine operates within one of two distinct memory modes: <em>shared</em> and <em>distributed</em>.
+Hereafter, we denote the tree representing the CSM description as $C$. Moreover, we let $c$ represent any
+component in $C$ and $s$ specifically represent a state machine component. In shared memory mode, each $c$
+is confined to a computing resource with the same shared memory. Conversely, in distributed memory mode,
+each $s$ can be executed on different resources, each equipped with its private memory. Thus these
+components run on a computing infrastructure with distributed memory. A single state machine operates
+exclusively in shared memory mode. The decision to opt for distributed or shared memory modes may have
+far-reaching implications. Opting for distribution presents advantages such as heightened parallelism,
+scalability, replication, and decentralization. However, this may result in increased data transfer times
+when data has to be exchanged between state machines executed on different resources.</p>
+
+<h2 id="data-model-manipulation-and-scope">Data Model, Manipulation and Scope</h2>
+
+<p>The scoping of local data within a collaborative state machine is defined with respect to the <em>dynamic extent</em>
+of the components of $C$ with shared memory. We denote the dynamic extent of a component $c$ as $c^+$ to
+include the component itself and any ancestor of $c$. When operating in shared memory mode, $C$ is guaranteed
+to execute on a single resource with shared memory such that any component $c \in C$ can access local data
+according to $c^+$ and $c_0^+$ where $c_0$, the root level, denotes the collaborative state machine. The root
+of a collaborative state machine in distributed memory mode has no shared memory and thus cannot declare or
+access local data. A state machine $s$ with its nested components $s_{c}$ always operates in shared memory
+even if $s$ is part of $C$ in distributed memory. $s$ has access to local data according to $s^+$. Similarly,
+each component $s_{c}$ has a dynamic extent denoted by $s_{c^+}$, allowing access to its local data within its
+specific scope, as illustrated in Figure 1. Restricting the access of data to ancestors facilitates
+information hiding. For example, a state can access the data of its parent state machine, but a state machine
+cannot access the data of its states or nested state machines. In Figure 1 state $S_{e}$ has access to
+variables $h$ and $b$, state $S_a$ can access $a$, and state $S_b$ can access variables $c$, $d$, $e$, and
+$a$. However, $SM_2$ can only access variable $b$. Siblings do not have access to each other’s data. For
+instance, $S_{d}$ cannot access any data within $SM_{21}$ or $S_{c}$.</p>
+
+<p>When referencing an existing variable within a component $c$, the variable is located by searching within the
+dynamic extent $c^+$, which encompasses the local data of $c$ and extends to include any ancestor components
+of $c$. The search proceeds from the local data of $c$ to the local data of its ancestors, and finally to
+persistent data accessible to the component and its ancestors.</p>
+
+<p>Within CSM, data plays a multifaceted role. Data may be declared lexically or created dynamically, and data
+can be manipulated through actions. Data may be stored locally within a component or persisted globally.
+Expressions provide fundamental data transformation operations, such as selecting properties from JSON
+objects, performing calculations or filtering, and invoking utility functions. The versatility of expressions
+extends to their usage in diverse scenarios. For example, expressions can facilitate gathering input data for
+service invocations, express guard conditions, or be instrumental in manipulating data objects directly.</p>
+
+<h2 id="execution-model">Execution Model</h2>
+
+<p>This section will define the CSM execution model. The execution model is defined as the execution of an
+individual state machine. A collaborative state machine containing multiple (nested) state machines will
+concurrently execute each individual state machine according to the execution model.</p>
+
+<p>A state machine instance is associated with a <em>status</em> $\mu = \langle c^+, \Epsilon, \Theta \rangle$ that
+captures its current situation, including its dynamic extent $c^+$, input events $\Epsilon$, and
+<em>active configuration</em> $\Theta$.</p>
+
+<p>The <em>active configuration</em> $\Theta$ of the state machine is the set of states $s \in S$ that are currently
+<em>active</em>. The <em>CSM step algorithm</em> aims to produce a new status according to changes in the state machine’s
+environment that the state machine responds to.</p>
+
+<p>The step algorithm reaches a new status by performing a <em>step</em>. We say that a step consists of an arbitrary
+number of <em>micro-steps</em> and that a step is completed yielding a new status whenever no micro-step exists for
+the executed step.</p>
+
+<p>The CSM execution model adheres to the following principles:</p>
+
+<ol>
+  <li>Changes that occur during a step are effective immediately.</li>
+  <li>An event is available during one step only and becomes unavailable upon completion of the step where it is
+handled.</li>
+  <li>A state machine is considered alive if the active configuration contains no terminal state.</li>
+  <li>The execution of a step and a micro-step may take time.</li>
+  <li>Actions defined are executed sequentially; a successive action is executed when the preceding action is
+completed.</li>
+  <li>One state must be active in the active configuration.</li>
+</ol>
+
+<p>Principle 1 serves to ensure that changes to the state machine’s status take effect immediately, avoiding
+non-determinism by committing changes without delay, thus maintaining consistency and predictability in the
+state machine’s behavior.</p>
+
+<p>Principle 2 serves to prevent redundant processing of events within a single step, ensuring that each event is
+handled exactly once. By making events unavailable after processing in a step, this principle maintains the
+integrity of event-driven behavior and avoids potential inconsistencies.</p>
+
+<p>Principle 3 serves to define the lifetime of a state machine based on the absence of terminal states in its
+active configuration. By considering a state machine alive if it has states to transition through, this
+principle ensures that execution continues until a terminal state is reached, maintaining the ongoing
+functionality of the state machine.</p>
+
+<p>Principle 4 serves to acknowledge the potential time consumption during the execution of steps and
+micro-steps. By recognizing that execution may take time, this principle allows for accommodating delays
+caused by various factors, ensuring that the execution model remains robust and capable of handling
+real-world scenarios where computational or external dependencies may affect execution time.</p>
+
+<p>Principle 5 serves to enforce the sequential execution of actions defined within the state machine. By
+ensuring that each action is executed only after the completion of the preceding action, this principle
+maintains determinism and prevents race conditions or inconsistencies that could arise from concurrent
+execution of actions, thereby preserving the integrity of state transitions and overall system behavior.</p>
+
+<p>Principle 6 serves to avoid non-determinism, i.e., $|{s \in \theta ∣ s \text{ is active}}|=1$, by enforcing
+that only one state can be active in the active configuration at any given time. By ensuring that the active
+configuration always contains exactly one active state, this principle prevents ambiguity in state transitions
+and guarantees predictable behavior within the state machine.</p>
+
+<h3 id="step-algorithm">Step Algorithm</h3>
+
+<p>We define the step algorithm as follows.</p>
+
+<p><strong>procedure</strong> <em>ExecuteStep</em></p>
+
+<ul>
+  <li><strong>Input</strong> Given the status $\mu$ of a state machine.</li>
+  <li><strong>Ouput</strong> Provide a new status $\mu$ of the state machine.</li>
+</ul>
+
+<ol>
+  <li>$\textbf{while } \Theta \neq \emptyset \textbf{ do}$
+    <ol>
+      <li>$x \leftarrow \text{Pop(}\Theta\text{)}$</li>
+      <li>$\text{Handle(}x, \mu\text{)}$</li>
+    </ol>
+  </li>
+</ol>
+
+<p>Here, <em>1.1</em> ensures that events in the event queue are removed before handling, and <em>1.2</em> ensures that the
+status is updated according to the behavior that follows from events in the event queue.</p>
+
+<p>Before executing a single step, $\Theta$ is updated with respect to any input events in the environment or
+collaborative state machine. External events, provided by the environment, are added to $\Theta$ before the
+execution of a step. Timeout events are treated as external events.</p>
+
+<p>We define the <em>Handle</em> procedure as follows.</p>
+
+<p><strong>procedure</strong> <em>Handle</em></p>
+
+<ul>
+  <li><strong>Input</strong> Given an input event $x$ and status $\mu$.</li>
+  <li><strong>Output</strong> Provide an updated status $\mu$ according to the event.</li>
+</ul>
+
+<ol>
+  <li>Select the active <em>on</em> transition $t$, given $x$ and $\mu$, or $\emptyset$ in case no active <em>on</em>
+transition exists.</li>
+  <li>$\textbf{while } \delta \neq \emptyset \textbf{ do}$
+    <ol>
+      <li>If $\delta$ is an external transition.
+        <ol>
+          <li>Cancel any <em>while</em> actions of the states exited due to $\delta$.</li>
+          <li>Execute the <em>exit</em> actions of the states exited due to $\delta$.</li>
+          <li>Execute the actions of $\delta$.</li>
+          <li>Execute the <em>entry</em> actions of the states entered due to $\delta$.</li>
+          <li>Execute the <em>while</em> actions of the states entered due to $\delta$.</li>
+          <li>Update the activate configuration.</li>
+          <li>Set $\delta$ the active <em>always</em> transition or $\emptyset$ in case no active <em>always</em> transition exists.</li>
+        </ol>
+      </li>
+      <li>Otherwise.
+        <ol>
+          <li>Execute the actions of $\delta$.</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<p>An <em>on</em> transition is selected (active) iff its source state (the state from which the transition starts) is
+the active state, its guard conditions evaluates to true, and $x$ is the event that would trigger the
+transition.</p>
+
+<p>An <em>always</em> transition is selected iff its source state (the state from which the transition starts) is the
+active state and its guard condition evaluates to true.</p>
+
+<pre><code class="language-mermaid">stateDiagram-v2
+    A --&gt; B: e1
+    B --&gt; A: e2
+    A --&gt; C: e1
+    C --&gt; B: e3
+</code></pre>
+
+<p>The selection of a transition must yield exactly one transition. Conflicts arise whenever one event dictates
+that the state machine should make two atomic states active. This is invalid and will result in
+non-determinism.</p>
+
+<p>In the example above, a conflict would arise when the active state is <em>A</em> and <em>e1</em> would be raised.</p>
+
+          </div>
+        </div>
+      </main>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const toc = document.getElementById("toc");
+  const content = document.getElementById("markdown-content");
+  const headings = content.querySelectorAll("h2, h3, h4");
+
+  headings.forEach(h => {
+    const id = h.id || h.textContent.toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]/g, "");
+    h.id = id;
+
+    const li = document.createElement("li");
+    li.className = h.tagName === "H2" ? "fw-bold mb-1" :  // reduced margin-bottom
+                   h.tagName === "H3" ? "ms-3 mb-1" :
+                   "ms-4 text-muted mb-1";
+
+    const a = document.createElement("a");
+    a.href = "#" + id;
+    a.textContent = h.textContent;
+    a.className = "text-decoration-none d-block py-0.5"; // reduced padding
+
+    a.addEventListener("click", function(e) {
+      e.preventDefault();
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    li.appendChild(a);
+    toc.appendChild(li);
+  });
+});
+</script>
+
+<style>
+#toc-sidebar {
+  top: 0;
+  max-height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: thin; /* Firefox */
+}
+#toc-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+#toc-sidebar::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+#toc a {
+  transition: color 0.2s;
+}
+#toc a:hover {
+  color: #0d6efd;
+  text-decoration: underline;
+}
+#markdown-content h2, 
+#markdown-content h3, 
+#markdown-content h4 {
+  scroll-margin-top: 80px; /* ensure headings are not hidden behind sticky header */
+}
+</style>
+
+
+
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h5 style="color: white;">Distributed and Parallel Systems group</h5>
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/contact/">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <a href="https://www.uibk.ac.at/en/" target="_blank" class="logo-link">
+            <img width="95px" height="40px" alt="DPS" src="/images/logo/uibklogo.png" />
+          </a>
+          
+            <div class="social">
+  
+    <a href="https://github.com/UIBK-DPS-DC" target="blank"><img src="/images/social/github.svg" title="Github" alt="Github" /></a>
+  
+    <a href="https://discord.gg/GDnrBsEtar" target="blank"><img src="/images/social/discord.svg" title="Discord" alt="Discord" /></a>
+  
+</div>
+
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>

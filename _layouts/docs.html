@@ -1,0 +1,109 @@
+---
+title: Documentations
+layout: default
+bodyClass: "page-services"
+---
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
+</script>
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+
+
+
+
+<div class="docs" style="font-family: 'Lato','Open Sans','Roboto','Ubuntu','Playfair Display',sans-serif;">
+  <div class="container" style="padding-top: 100px; padding-bottom: 60px;">
+    <div class="row">
+
+      <!-- Sidebar (left) -->
+      <nav id="toc-sidebar" class="col-12 col-md-4 col-lg-3 bg-light border-end position-relative overflow-auto py-3 px-3">
+        <h5 class="fw-bold mb-3">Content</h5>
+        <ul id="toc" class="list-unstyled small mb-0"></ul>
+      </nav>
+
+      <!-- Main content (right) -->
+      <main class="col-12 col-md-8 col-lg-9 px-md-4">
+        <div class="team team-single">
+          <h1 class="subtitle">{{ page.title }}</h1>
+          <div id="markdown-content" class="content">
+            {{ content }}
+          </div>
+        </div>
+      </main>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const toc = document.getElementById("toc");
+  const content = document.getElementById("markdown-content");
+  const headings = content.querySelectorAll("h2, h3, h4");
+
+  headings.forEach(h => {
+    const id = h.id || h.textContent.toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]/g, "");
+    h.id = id;
+
+    const li = document.createElement("li");
+    li.className = h.tagName === "H2" ? "fw-bold mb-1" :  // reduced margin-bottom
+                   h.tagName === "H3" ? "ms-3 mb-1" :
+                   "ms-4 text-muted mb-1";
+
+    const a = document.createElement("a");
+    a.href = "#" + id;
+    a.textContent = h.textContent;
+    a.className = "text-decoration-none d-block py-0.5"; // reduced padding
+
+    a.addEventListener("click", function(e) {
+      e.preventDefault();
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    li.appendChild(a);
+    toc.appendChild(li);
+  });
+});
+</script>
+
+<style>
+#toc-sidebar {
+  top: 0;
+  max-height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: thin; /* Firefox */
+}
+#toc-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+#toc-sidebar::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+#toc a {
+  transition: color 0.2s;
+}
+#toc a:hover {
+  color: #0d6efd;
+  text-decoration: underline;
+}
+#markdown-content h2, 
+#markdown-content h3, 
+#markdown-content h4 {
+  scroll-margin-top: 80px; /* ensure headings are not hidden behind sticky header */
+}
+</style>
+
+

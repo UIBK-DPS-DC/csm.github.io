@@ -1,0 +1,10 @@
+<div class="call">
+  <div class="call-box-top">
+    Explore our latest documentation
+  </div>
+    {% if include.show_button %}
+      <div class="call-box-bottom">
+        <a  href="{{ "news" | relative_url }}", class="button">Read more</a>
+      </div>
+    {% endif %}
+</div>
