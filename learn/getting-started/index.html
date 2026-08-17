@@ -6,10 +6,6 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="How to get started?">
-      
-      
-        <meta name="author" content="metheredge">
       
       
         <link rel="canonical" href="https://collaborativestatemachines.github.io/learn/getting-started/">
@@ -26,7 +22,7 @@
     
     
       
-        <title>Getting started - Collaborative State Machines (CSM)</title>
+        <title>Cirrina Runtime - Collaborative State Machines (CSM)</title>
       
     
     
@@ -90,6 +86,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#cirrina-runtime" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -121,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Getting started
+              Cirrina Runtime
             
           </span>
         </div>
@@ -446,18 +447,163 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Cirrina Runtime
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    Getting started
+    Cirrina Runtime
     
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quickstart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quickstart
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quickstart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-the-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create the network
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-etcd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start etcd
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-cirrina" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run Cirrina
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distributed-communication-with-zenoh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Distributed communication with Zenoh
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Distributed communication with Zenoh">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#peer-to-peer-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Peer-to-peer deployment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zenoh-router-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zenoh router deployment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persistent-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persistent context
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example application
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1071,6 +1217,127 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quickstart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quickstart
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quickstart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-the-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create the network
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-etcd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start etcd
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-cirrina" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run Cirrina
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distributed-communication-with-zenoh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Distributed communication with Zenoh
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Distributed communication with Zenoh">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#peer-to-peer-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Peer-to-peer deployment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zenoh-router-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zenoh router deployment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persistent-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persistent context
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example application
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1089,22 +1356,179 @@
   
 
 
-  <h1>Getting started</h1>
+<h1 id="cirrina-runtime">Cirrina Runtime</h1>
+<p>Cirrina is the runtime environment for executing <strong>Collaborative State Machines</strong> as distributed applications. It provides the infrastructure required to instantiate state machines, exchange events between runtime instances, and maintain persistent application context.</p>
+<p>A Cirrina deployment consists of one or more runtime instances. Each instance executes state machine instances defined by a CSML application and communicates with other instances through <a href="https://zenoh.io/">Zenoh</a>. Persistent context is managed through a context provider, with <a href="https://etcd.io/">etcd</a> currently supported as the default provider.</p>
+<p>The runtime separates the <strong>application model</strong> from the <strong>execution infrastructure</strong>. Developers describe the behavior and coordination of distributed applications using Collaborative State Machines, while Cirrina manages execution, communication, persistence, and observability.</p>
+<pre class="mermaid"><code>flowchart LR
+    A["CSML Application"]
+    R["Cirrina Runtime"]
+    Z["Zenoh"]
+    C["Persistent Context"]
+    E["etcd"]
 
-<!-- prettier-ignore -->
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>We are in the process of updating the getting started guide to match the latest version.</p>
-</div>
+    A --&gt; R
+    R &lt;--&gt; Z
+    R &lt;--&gt; C
+    C --&gt; E</code></pre>
+<h2 id="quickstart">Quickstart</h2>
+<p>Pull the latest Cirrina image:</p>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>docker<span class="w"> </span>pull<span class="w"> </span>collaborativestatemachines/cirrina:latest
+</span></code></pre></div>
+For local development, you can also use Docker Compose to start Cirrina together with its dependencies. This is convenient when repeatedly starting and stopping the complete development environment.
+Alternatively, Cirrina and its dependencies can be started individually.</p>
+<h4 id="create-the-network">Create the network</h4>
+<p>Create a Docker network shared by the runtime, etcd, and Zenoh:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker<span class="w"> </span>network<span class="w"> </span>create<span class="w"> </span>cirrina
+</span></code></pre></div>
+<h4 id="start-etcd">Start etcd</h4>
+<p>Start an etcd instance:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span>--network<span class="w"> </span>cirrina<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span>--name<span class="w"> </span>etcd-local<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span>gcr.io/etcd-development/etcd:v3.5.0<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span>/usr/local/bin/etcd<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span>--name<span class="w"> </span>s1<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span>--listen-client-urls<span class="w"> </span>http://0.0.0.0:2379<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span>--advertise-client-urls<span class="w"> </span>http://etcd-local:2379<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span>--listen-peer-urls<span class="w"> </span>http://0.0.0.0:2380<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span>--initial-advertise-peer-urls<span class="w"> </span>http://etcd-local:2380<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">  </span>--initial-cluster<span class="w"> </span><span class="nv">s1</span><span class="o">=</span>http://etcd-local:2380
+</span></code></pre></div>
+<h4 id="run-cirrina">Run Cirrina</h4>
+<p>The following example executes the <code>pingPong.pkl</code> application:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>docker<span class="w"> </span>run<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span>--network<span class="w"> </span>cirrina<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">RUN</span><span class="o">=</span>ping,pong<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">MAIN_URI</span><span class="o">=</span>https://raw.githubusercontent.com/CollaborativeStateMachines/Cirrina/refs/heads/develop/examples/concurrency/pingPong.pkl<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">ETCD_CONTEXT_URL</span><span class="o">=</span>http://etcd-local:2379<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span>collaborativestatemachines/cirrina:latest
+</span></code></pre></div>
+<p>The <code>RUN</code> variable specifies the state machine instances to execute, while <code>MAIN_URI</code> identifies the CSML application containing their definitions. We recommend developing and maintaining your CSML application in a GitHub repository, which provides version control and makes it easy to collaborate on and distribute your use case. Once the application is available, <code>MAIN_URI</code> can point directly to the raw GitHub URL of the CSML file, allowing the runtime to retrieve and execute the application without requiring it to be packaged locally.</p>
+<h2 id="configuration">Configuration</h2>
+<p>Cirrina is configured through environment variables:</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ETCD_CONTEXT_URL</code></td>
+<td><code>null</code></td>
+<td>Address of the etcd context provider</td>
+</tr>
+<tr>
+<td><code>ZENOH_EVENT_HANDLER_CONFIG_URI</code></td>
+<td><code>null</code></td>
+<td>Zenoh endpoint used for distributed communication</td>
+</tr>
+<tr>
+<td><code>MAIN_URI</code></td>
+<td><code>file:///app/main.pkl</code></td>
+<td>URI of the main CSML application</td>
+</tr>
+<tr>
+<td><code>CONTEXT_PROVIDER</code></td>
+<td><code>ETCD</code></td>
+<td>Context provider used for persistent state</td>
+</tr>
+<tr>
+<td><code>METRICS_DIRECTORY</code></td>
+<td><code>metrics</code></td>
+<td>Directory where runtime metrics are stored</td>
+</tr>
+<tr>
+<td><code>METRICS_PERIOD</code></td>
+<td><code>1</code></td>
+<td>Metrics collection period</td>
+</tr>
+<tr>
+<td><code>RUN</code></td>
+<td>empty</td>
+<td>Comma-separated list of state machine instances to execute</td>
+</tr>
+</tbody>
+</table>
+<p>For example:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>-e<span class="w"> </span><span class="nv">RUN</span><span class="o">=</span>ping,pong
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>-e<span class="w"> </span><span class="nv">MAIN_URI</span><span class="o">=</span>https://raw.githubusercontent.com/CollaborativeStateMachines/Cirrina/refs/heads/develop/examples/concurrency/pingPong.pkl
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>-e<span class="w"> </span><span class="nv">ETCD_CONTEXT_URL</span><span class="o">=</span>http://etcd-local:2379
+</span></code></pre></div>
+<h2 id="distributed-communication-with-zenoh">Distributed communication with Zenoh</h2>
+<p>Cirrina uses <a href="https://zenoh.io/">Zenoh</a> to exchange events between runtime instances. The application does not need to manage connections or transport mechanisms directly; communication is handled by the runtime.</p>
+<h3 id="peer-to-peer-deployment">Peer-to-peer deployment</h3>
+<p>When Cirrina instances are deployed on the same network, they can discover each other automatically through Zenoh's peer-to-peer communication. Each Cirrina instance starts a Zenoh session in peer mode, allowing it to participate directly in the Zenoh network. When peer discovery is enabled, Zenoh uses the available discovery mechanisms to identify other peers on the network and establish communication paths between them.
+As a result, no central broker or manually configured connection between Cirrina instances is required. Once the peers have discovered each other, Cirrina can exchange events directly between runtime instances through the Zenoh network.
+This configuration is particularly useful for local deployments and environments where participating nodes share a network.</p>
+<pre class="mermaid"><code>flowchart LR
+    C1["Cirrina 1"]
+    C2["Cirrina 2"]
+    C3["Cirrina 3"]
+
+    C1 &lt;--&gt; |"Zenoh"| C2
+    C2 &lt;--&gt; |"Zenoh"| C3
+    C1 &lt;--&gt; |"Zenoh"| C3</code></pre>
+<h3 id="zenoh-router-deployment">Zenoh router deployment</h3>
+<p>Automatic peer discovery may not be available when nodes are deployed across different networks or infrastructure domains. In these environments, Cirrina instances can connect through a Zenoh router.</p>
+<p>The Docker Compose configuration includes a Zenoh router by default.</p>
+<pre class="mermaid"><code>flowchart LR
+    C1["Cirrina 1"]
+    C2["Cirrina 2"]
+    C3["Cirrina 3"]
+    Z["Zenoh Router"]
+
+    C1 --&gt; |"Zenoh"| Z
+    C2 --&gt; |"Zenoh"| Z
+    C3 --&gt; |"Zenoh"| Z</code></pre>
+<p>For a manual deployment, start a Zenoh router:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>docker<span class="w"> </span>run<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span>--network<span class="w"> </span>cirrina<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span>-p<span class="w"> </span><span class="m">7447</span>:7447<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span>eclipse/zenoh:latest
+</span></code></pre></div>
+<p>Then configure Cirrina to connect to the router:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>docker<span class="w"> </span>run<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span>--network<span class="w"> </span>cirrina<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">RUN</span><span class="o">=</span>ping,pong<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">MAIN_URI</span><span class="o">=</span>https://raw.githubusercontent.com/CollaborativeStateMachines/Cirrina/refs/heads/develop/examples/concurrency/pingPong.pkl<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">ETCD_CONTEXT_URL</span><span class="o">=</span>http://etcd-local:2379<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">ZENOH_EVENT_HANDLER_CONFIG_URI</span><span class="o">=</span>tcp://zenoh:7447<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">  </span>collaborativestatemachines/cirrina:latest
+</span></code></pre></div>
+<p>For nodes deployed on different networks, replace <code>zenoh</code> with the hostname or IP address through which the Zenoh router is reachable.</p>
+<h2 id="persistent-context">Persistent context</h2>
+<p>Collaborative State Machines distinguish between transient execution data and persistent application context.</p>
+<p>Transient data belongs to the execution of a particular state machine instance and is maintained by the runtime. Persistent data is associated with the root collaborative state machine and is intended to remain available independently of an individual state machine instance.
+Cirrina externalizes persistent context through a context provider. The default provider is etcd.</p>
+<p>The context provider is deliberately separated from the execution layer. This allows runtime instances to access persistent application state while communicating independently through Zenoh.</p>
+<h2 id="example-application">Example application</h2>
+<p>The <code>pingPong.pkl</code> example demonstrates communication between two state machine instances. One machine emits an event to another machine, which reacts to the event and subsequently emits an event back.</p>
+<p>Run the example with:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>docker<span class="w"> </span>run<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span>--network<span class="w"> </span>cirrina<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">RUN</span><span class="o">=</span>ping,pong<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">MAIN_URI</span><span class="o">=</span>https://raw.githubusercontent.com/CollaborativeStateMachines/Cirrina/refs/heads/develop/examples/concurrency/pingPong.pkl<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">ETCD_CONTEXT_URL</span><span class="o">=</span>http://etcd-local:2379<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">  </span>collaborativestatemachines/cirrina:latest
+</span></code></pre></div>
+<p>The example demonstrates the basic execution model of Cirrina: state machine instances execute within the runtime, exchange events through Zenoh, and access persistent application context through the configured context provider.</p>
+<h2 id="development">Development</h2>
+<p>Cirrina provides the runtime layer for applications expressed using the Collaborative State Machines framework. Development can therefore be performed at two levels:</p>
+<ol>
+<li><strong>Application level</strong> — define state machines, states, transitions, events, and persistent data using CSML.</li>
+<li><strong>Runtime level</strong> — extend the mechanisms responsible for execution, communication, context management, and observability.</li>
+</ol>
+<p>This separation allows the programming framework to remain independent of the infrastructure used to execute it.</p>
 
 
 
 
 
 
-
-  
-  
 
 
   <aside class="md-source-file">
@@ -1121,7 +1545,7 @@
     </span>
     <nav>
       
-        <a href="mailto:marlon.etheredge@uibk.ac.at">Marlon Etheredge</a>
+        <a href="mailto:juan.aznarp@gmail.com">juanaznarp94</a>
     </nav>
   </span>
 
