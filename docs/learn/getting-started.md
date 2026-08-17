@@ -185,9 +185,9 @@ The example demonstrates the basic execution model of Cirrina: state machine ins
 
 ## Development
 
-Cirrina provides the runtime layer for applications expressed using the Collaborative State Machines model. Development can therefore be performed at two levels:
+Cirrina provides the runtime layer for applications expressed using the Collaborative State Machines framework. Development can therefore be performed at two levels:
 
 1. **Application level** — define state machines, states, transitions, events, and persistent data using CSML.
 2. **Runtime level** — extend the mechanisms responsible for execution, communication, context management, and observability.
 
-This separation allows the programming model to remain independent of the infrastructure used to execute it.
+This separation allows the programming framework to remain independent of the infrastructure used to execute it.
