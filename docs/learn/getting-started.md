@@ -20,16 +20,6 @@ flowchart LR
     C --> E
 ```
 
-## Runtime architecture
-
-Each Cirrina runtime instance executes a set of state machine instances and maintains their local execution state. State machines react to events generated locally or received from other runtime instances.
-
-Zenoh provides the communication layer between runtime instances. Depending on the deployment environment, Cirrina instances can communicate directly as Zenoh peers or connect through a Zenoh router.
-
-Persistent application context is separated from transient execution state. The context provider stores data that must remain available independently of an individual state machine instance or runtime process.
-
-This separation allows the application logic, execution layer, communication layer, and persistent context to evolve independently.
-
 ## Quickstart
 
 Pull the latest Cirrina image:
@@ -37,9 +27,7 @@ Pull the latest Cirrina image:
 ```bash
 docker pull collaborativestatemachines/cirrina:latest
 ```
-
 For local development, you can also use Docker Compose to start Cirrina together with its dependencies. This is convenient when repeatedly starting and stopping the complete development environment.
-
 Alternatively, Cirrina and its dependencies can be started individually.
 
 #### Create the network
@@ -81,7 +69,7 @@ docker run \
   collaborativestatemachines/cirrina:latest
 ```
 
-The `RUN` variable specifies the state machine instances to execute, while `MAIN_URI` identifies the CSML application containing their definitions.
+The `RUN` variable specifies the state machine instances to execute, while `MAIN_URI` identifies the CSML application containing their definitions. We recommend developing and maintaining your CSML application in a GitHub repository, which provides version control and makes it easy to collaborate on and distribute your use case. Once the application is available, `MAIN_URI` can point directly to the raw GitHub URL of the CSML file, allowing the runtime to retrieve and execute the application without requiring it to be packaged locally.
 
 ## Configuration
 
@@ -111,7 +99,10 @@ Cirrina uses [Zenoh](https://zenoh.io/) to exchange events between runtime insta
 
 ### Peer-to-peer deployment
 
-When Cirrina instances are deployed on the same network and Zenoh peer discovery is available, they can discover each other automatically. No dedicated Zenoh router is required.
+When Cirrina instances are deployed on the same network, they can discover each other automatically through Zenoh's peer-to-peer communication. Each Cirrina instance starts a Zenoh session in peer mode, allowing it to participate directly in the Zenoh network. When peer discovery is enabled, Zenoh uses the available discovery mechanisms to identify other peers on the network and establish communication paths between them.
+As a result, no central broker or manually configured connection between Cirrina instances is required. Once the peers have discovered each other, Cirrina can exchange events directly between runtime instances through the Zenoh network.
+This configuration is particularly useful for local deployments and environments where participating nodes share a network.
+
 
 ```mermaid
 flowchart LR
@@ -124,7 +115,6 @@ flowchart LR
     C1 <--> |"Zenoh"| C3
 ```
 
-This configuration is suitable for local deployments and environments where participating nodes share a network.
 
 ### Zenoh router deployment
 
@@ -172,7 +162,6 @@ For nodes deployed on different networks, replace `zenoh` with the hostname or I
 Collaborative State Machines distinguish between transient execution data and persistent application context.
 
 Transient data belongs to the execution of a particular state machine instance and is maintained by the runtime. Persistent data is associated with the root collaborative state machine and is intended to remain available independently of an individual state machine instance.
-
 Cirrina externalizes persistent context through a context provider. The default provider is etcd.
 
 The context provider is deliberately separated from the execution layer. This allows runtime instances to access persistent application state while communicating independently through Zenoh.
